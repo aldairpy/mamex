@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* CONF BOOTSTRAP CLASSES */
+.navbar-brand img {
+    border-radius: 50px;
+    width: auto;
+    height: 40px;
+}
+
+h1, h2, h3{
+    font-family: 'Playfair Display',serif;
+    font-weight: 600;
+}
+
+p{
+    font-family: 'Raleway', sans-serif
+}
+.form-control{
+   
+    margin-bottom: 3rem !important;
+    border:none;
+    border-bottom: 1.8px solid rgba(0, 0, 0, 0.3) !important;
+    border-radius: 0px !important;
+    font-weight: 500 !important;
+}
+.bg-dark {
+    background-color: #000000 !important;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: .5rem !important;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-link:hover {
+    color: #f8c291 !important;
+}
+
+.navbar-dark {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.navbar-dark:hover{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 195, 18, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+
+
+
+footer{
+    font-family: 'EB Garamond', serif;
+}
+
+main{
+    font-family: 'EB Garamond', serif;
+}
+
+
+.circle{
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.box-shadow-1 {
+    box-shadow: 0.25 0.25 1rem rgba(0, 0, 0, .25)!important;
+}
