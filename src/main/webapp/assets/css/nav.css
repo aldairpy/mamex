@@ -23,7 +23,7 @@ p{
     font-family: 'Raleway', sans-serif
 }
 .form-control{
-   
+
     margin-bottom: 3rem !important;
     border:none;
     border-bottom: 1.8px solid rgba(0, 0, 0, 0.3) !important;
@@ -74,7 +74,7 @@ main{
     align-items: center;
     margin: 0 auto;
     margin-bottom: 20px;
-  }
+}
 
 *,
 *::after,
@@ -88,5 +88,51 @@ img{
 }
 
 .box-shadow-1 {
-    box-shadow: 0.25 0.25 1rem rgba(0, 0, 0, .25)!important;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, .25)!important;
+} /*Agregué rem a los 0.25*/
+
+/* CONTACTO */
+
+.contact-cards {
+    font-size: small;
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    justify-content: space-between;
+}
+
+.box-shadow-1 {
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, .25);
+}
+
+.contact-card {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 100%;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.social-media a {
+    padding: 0 0.4rem;
+    text-decoration: none;
+}
+
+.contact-card:hover {
+
+    transform: scale(1.1);
+    box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, .25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#link:hover {
+    cursor: pointer;
 }

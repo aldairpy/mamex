@@ -34,14 +34,14 @@ public class DAOUser implements DAORepository<User> {
             //se realiza la conexion a la base de datos
             conn = new MySQLConnection().connect();
             //se define la sentencia mysql
-            String query = "INSERT INTO USERS (names, lastnames, email, password) VALUES(?, ?, ?, ?);";
+            String query = "INSERT INTO users (names, lastnames, email, password) VALUES(?, ?, ?, ?);";
             //se prepara la sentencia
             pstm = conn.prepareStatement(query);
             //establecemos el valor a los parametros de la sentencia
-            pstm.setString(1, "names");
-            pstm.setString(2, "lastnames");
-            pstm.setString(3, "email");
-            pstm.setString(4, "password");
+            pstm.setString(1, object.getNames());
+            pstm.setString(2, object.getLastnames());
+            pstm.setString(3, object.getEmail());
+            pstm.setString(4, object.getPassword());
             //retorna un valor 0 si la consulta es fallida o un 1 si es correcta
             return pstm.executeUpdate() > 0;
         } catch (SQLException e) {
