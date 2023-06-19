@@ -63,9 +63,9 @@ public class ServletMAMEX extends HttpServlet {
                     redirect = "/user/register-successfull?result=" + result
                             + "&message" + URLEncoder.encode("Exito! Usuario registrado correctamente", StandardCharsets.UTF_8);
                 } else {
-                    redirect = "/user/register-successfull?result=" + result
+                    redirect = "/user/mamex?result=" + result
                             + "&message" + URLEncoder.encode("Error :/ Acción no realizada correctamente", StandardCharsets.UTF_8);
-                }
+                } //cambiar la url a un caso fallido, redirigirlo a registrarse de nuevo pero mostrar el mensaje de error.
 
                 break;
             case "/user/login":
