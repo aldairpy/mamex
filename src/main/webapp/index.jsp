@@ -17,7 +17,7 @@
 </head>
 
 <body>
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark ">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="#"><img src="./assets/img/OIP.jpg" alt="logo" /></a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"

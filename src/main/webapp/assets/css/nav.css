@@ -1,35 +1,43 @@
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
 }
-html{
+.navbar{
+    font-family: 'Raleway', sans-serif;
+}
+html {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 /* CONF BOOTSTRAP CLASSES */
 .navbar-brand img {
     border-radius: 50px;
     width: auto;
-    height: 40px;
+    height: 50px;
 }
 
-h1, h2, h3{
-    font-family: 'Playfair Display',serif;
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
     font-weight: 600;
 }
 
-p{
+p {
     font-family: 'Raleway', sans-serif
 }
-.form-control{
+
+.form-control {
 
     margin-bottom: 3rem !important;
-    border:none;
+    border: none;
     border-bottom: 1.8px solid rgba(0, 0, 0, 0.3) !important;
     border-radius: 0px !important;
     font-weight: 500 !important;
 }
+
 .bg-dark {
     background-color: #000000 !important;
 }
@@ -48,23 +56,21 @@ p{
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 }
 
-.navbar-dark:hover{
+.navbar-dark:hover {
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 195, 18, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 }
 
 
 
 
-footer{
-    font-family: 'EB Garamond', serif;
-}
-
-main{
+footer {
     font-family: 'EB Garamond', serif;
 }
 
 
-.circle{
+
+
+.circle {
     border-radius: 50%;
     width: 72px;
     height: 72px;
@@ -82,14 +88,12 @@ main{
     box-sizing: border-box;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
-.box-shadow-1 {
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, .25)!important;
-} /*Agregué rem a los 0.25*/
+
 
 /* CONTACTO */
 
@@ -135,4 +139,28 @@ img{
 
 #link:hover {
     cursor: pointer;
+}
+
+/* ********** Contact Form ********** */
+
+.modal#gracias:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.notification {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+.notification.show {
+    display: block;
 }

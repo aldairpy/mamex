@@ -77,9 +77,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-5 col-12 p-0 w-md-100">
-            <img class="img-fluid w-100" src="../../assets/img/image 27.png">
-        </div>
+
         <div class="col-lg-7 col-12 mt-lg-4 mt-md-5 mt-xs-1">
             <h1 class="display-3 text-center fs-1 fw-bold mt-5">
                 CREAR CUENTA
@@ -113,6 +111,9 @@
 
             </div>
         </div>
+        <div class="col-lg-5 col-12 p-0 d-none d-md-none d-lg-block d-md-block">
+            <img class="w-100 vh-100" src="../../assets/img/image 27.png" alt="imagen_registro">
+        </div>
 
     </div>
 
@@ -122,28 +123,7 @@
 
 
 
-<footer class="p-5" style="background-color: #6b6b6b">
-    <div class="container text-white border-bottom border-white">
-        <nav>
-            <h1 style="font-weight: 400">
-                MANOS <br />
-                MEXICANAS
-            </h1>
-            <br /><br />
-            <p>
-                <a href="mailto:manos_mexicanas@gmail.com"
-                   class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">manos_mexicanas@gmail.com</a>
-            </p>
-            <br /><br />
-            <p>Llama al: 777-549-9809</p>
-            <br />
 
-        </nav>
-    </div>
-    <p class="text-white text-center p-5" style="font-family: 'Raleway', sans-serif;">
-        Copyrights. All rights reserved.
-    </p>
-</footer>
 
 
 
