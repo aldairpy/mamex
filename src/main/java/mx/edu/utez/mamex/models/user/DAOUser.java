@@ -62,6 +62,7 @@ public class DAOUser implements DAORepository<User> {
         return false;
     }
 
+
     public void close() {
         try {
             if (conn != null) conn.close();
