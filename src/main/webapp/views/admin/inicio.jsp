@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Raleway:wght@300;400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/nav.css" />
+    <link rel="icon" href="../../assets/img/OIP.jpg">
+    <jsp:include page="../../layouts/head.jsp"/>
     <link rel="icon" href="../../assets/img/OIP.jpg">
     <title>Inicio</title>
 </head>
@@ -46,6 +46,7 @@
             </div>
         </div>
     </nav>
+
     <div class="sidebar">
         <ul class="list-unstyled p-5 mt-5" style="font-size: 14px;">
             <li class="mb-3"><a href="" class="nav-link"><i data-feather="home"></i><span class="ps-3">Inicio</span></a>
@@ -62,6 +63,7 @@
                         class="ps-3">Ajustes</span></a></li>
         </ul>
     </div>
+
     <main>
         <div class="container-main bg-body-light">
             <div class="container">
