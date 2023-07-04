@@ -9,16 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletMAMEX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletMAMEX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/user/DAOUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/user/DAOUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/registro_usuarios.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/registro_usuarios.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
