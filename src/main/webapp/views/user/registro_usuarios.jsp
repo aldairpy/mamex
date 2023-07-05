@@ -6,6 +6,16 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Raleway:wght@300;400;500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/nav.css"/>
+    <link rel="icon" href="../../assets/img/OIP.jpg">
+
+    <jsp:include page="../../layouts/head.jsp"/>
     <jsp:include page="../../layouts/head.jsp"/>
     <title>Manos Mexicanas</title>
 </head>
@@ -24,7 +34,7 @@
                 <ul class="mt-lg-3 d-lg-flex justify-content-lg-center " style="list-style: none;">
                     <li><a href="../../index.jsp" class="nav-link">Inicio</a></li>
                     <li><a href="" class="nav-link">Categorias</a></li>
-                    <li><a href="" class="nav-link">Ofertas</a></li>
+                    <li><a href="ofertas.jsp" class="nav-link">Ofertas</a></li>
                     <li><a href="" class="nav-link">Novedades</a></li>
                     <li><a href="contacto.jsp" class="nav-link">Contacto</a></li>
                     <li><a href="" class="nav-link">Nosotros</a></li>
@@ -69,9 +79,6 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-5 col-12 p-0 w-md-100">
-            <img class="img-fluid w-100" src="../../assets/img/image 27.png">
-        </div>
         <div class="col-lg-7 col-12 mt-lg-4 mt-md-5 mt-xs-1">
             <h1 class="display-3 text-center fs-1 fw-bold mt-5">
                 CREAR CUENTA
@@ -94,6 +101,7 @@
                         <input class="form-control" type="password" name="password" id="password"
                                placeholder="Contraseña" required>
                     </div>
+
 
                     <button id="btn-registro" type="submit" class="btn btn-dark m-4"
                             style="font-weight: 500; border-radius: 0px; padding: 10px; width: 150px;">Regístrate
@@ -121,6 +129,8 @@
 
 
                 </form>
+
+
                 <div class="container">
                     <div class="col-12 text-center">
                         <p class="text-center mt-5">¿Ya tienes una cuenta? <a href="inicio_sesion.jsp"
@@ -133,6 +143,9 @@
 
             </div>
         </div>
+        <div class="col-lg-5 col-12 p-0 d-none d-md-none d-lg-block d-md-block">
+            <img class="w-100 vh-100" src="../../assets/img/image 27.png" alt="imagen_registro">
+        </div>
 
     </div>
 
@@ -140,40 +153,8 @@
 </div>
 
 
-<footer class="p-5" style="background-color: #6b6b6b">
-    <div class="container text-white border-bottom border-white">
-        <nav>
-            <h1 style="font-weight: 400">
-                MANOS <br/>
-                MEXICANAS
-            </h1>
-            <br/><br/>
-            <p>
-                <a href="mailto:manos_mexicanas@gmail.com"
-                   class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">manos_mexicanas@gmail.com</a>
-            </p>
-            <br/><br/>
-            <p>Llama al: 777-549-9809</p>
-            <br/>
 
-        </nav>
-    </div>
-    <p class="text-white text-center p-5" style="font-family: 'Raleway', sans-serif;">
-        Copyrights. All rights reserved.
-    </p>
-</footer>
 
-<script>
-    // Agrega el evento de escucha al botón de registro
-    $('#btn-registro').click(function() {
-        $('#modal-registro').modal('show'); // Muestra la ventana modal
-
-        // Desaparece la ventana modal después de 3 segundos (3000 milisegundos)
-        setTimeout(function() {
-            $('#modal-registro').modal('hide');
-        }, 3000);
-    });
-</script>
 <script src="../../assets/js/bootstrap.bundle.min.js"></script>
 <jsp:include page="../../layouts/footer.jsp"/>
 
