@@ -3,7 +3,6 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,42 +30,21 @@
                 <ul class="mt-lg-3 d-lg-flex justify-content-lg-center " style="list-style: none;">
                     <li><a href="../../index.jsp" class="nav-link">Inicio</a></li>
                     <li><a href="" class="nav-link">Categorias</a></li>
-                    <li><a href="" class="nav-link">Ofertas</a></li>
+                    <li><a href="ofertas.jsp" class="nav-link">Ofertas</a></li>
                     <li><a href="" class="nav-link">Novedades</a></li>
                     <li><a href="contacto.jsp" class="nav-link">Contacto</a></li>
                     <li><a href="" class="nav-link">Nosotros</a></li>
                 </ul>
             </div>
-            <div class="container d-flex justify-content-lg-end justify-content-center">
+            <div class="container d-flex justify-content-lg-end justify-content-sm-center justify-content-md-center">
                 <a href="" class="icon-link p-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="28"
-                         height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
-                         stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                        <path d="M21 21l-6 -6" />
-                    </svg>
+                    <i class="icon" data-feather = "search"></i>
                 </a>
-                <a class="icon-link p-3" href="">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle"
-                         width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
-                         stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-                        <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-                    </svg>
+                <a class="icon-link p-3" href="../../views/user/inicio_sesion.jsp">
+                    <i class="icon" data-feather = "user"></i>
                 </a>
-                <a class="icon-link p-3" href="inicio_sesion.jsp">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart"
-                         width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
-                         stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                        <path d="M17 17h-11v-14h-2" />
-                        <path d="M6 5l14 1l-1 7h-13" />
-                    </svg>
+                <a class="icon-link p-3" href="../../views/user/inicio_sesion.jsp">
+                    <i class="icon" data-feather = "shopping-cart"></i>
                 </a>
             </div>
         </div>
@@ -83,7 +61,6 @@
 
             <div class="container-fluid">
                 <form class="text-center w-50 m-auto pt-4" novalidate action="/user/login" method="post">
-
                     <div class="m-4">
                         <input class="form-control" type="email" id="email" placeholder="E-mail" required>
                     </div>
@@ -100,54 +77,76 @@
                         <p class="text-center">¿No tienes una cuenta? <a href="registro_usuarios.jsp"
                                                                          class="text-decoration-none text-dark link-animation"
                                                                          style=" font-weight: 700; color:black">Regístrate</a></p>
-                        <p><a href="" style="text-decoration: underline; color: black;">Olvidé mi contraseña</a></p>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#resetPassword">
+                            Olvidé mi contraseña
+                        </button>
                     </div>
+                    <div class="modal fade" id="resetPassword" tabindex="-1"
+                         aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="d-flex justify-content-end m-3">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="modal-header">
+                                    <div class="container text-center">
+                                        <h1 class="mb-4 fw-bolder">
+                                            Recuperar contraseña
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container text-center">
+                                                    <span class="text-center lh-md " style="font-size: 1rem;">Introduce
+                                                        la
+                                                        dirección de
+                                                        correo que usaste en el registro. <br> Te enviaremos un correo
+                                                        con
+                                                        instrucciones para
+                                                        restablecer tu
+                                                        contraseña.</span>
+                                        <div class="mt-5">
+                                            <form action="">
+                                                <label class="fw-bold" style="font-size: 14px;">Introduce tu
+                                                    correo electrónico</label>
+                                            </form>
+                                        </div>
+                                        <div class="p-2">
+                                            <input style="width: inherit; padding: 6px;" type="email"
+                                                   name="user_email" id="email_password"
+                                                   placeholder="Correo electrónico" required>
+                                        </div>
+                                        <button class="btn btn-dark m-5 m-lg-4"
+                                                style="font-weight: 500; border-radius: 50px; padding: 10px; width: 100px;">Enviar</button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div>
+                                            <p class="text-center pb-5 m-3 fw-bold"
+                                               style="font-size: 1rem; font-weight: 400;">
+                                                Si necesitas más ayuda, contacta con nosotros en <a
+                                                    href="mailto:manos_mexicanas@gmail.com">manos_mexicanas@gmail.com</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
         </div>
-        <div class="col-lg-5 col-12 p-0 w-md-100">
-            <img class="img-fluid w-100" src="../../assets/img/image 28.png">
+        <div class="col-lg-5 col-12 p-0 d-lg-block d-none">
+            <img class="w-100" src="../../assets/img/image 28.png">
         </div>
     </div>
-
-
 </div>
 
-
-
-
-
-
-
-
-
-
-
-<footer class="p-5" style="background-color: #6b6b6b">
-    <div class="container text-white border-bottom border-white">
-        <nav>
-            <h1 style="font-weight: 400">
-                MANOS <br />
-                MEXICANAS
-            </h1>
-            <br /><br />
-            <p>
-                <a href="mailto:manos_mexicanas@gmail.com"
-                   class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">manos_mexicanas@gmail.com</a>
-            </p>
-            <br /><br />
-            <p>Llama al: 777-549-9809</p>
-            <br />
-
-        </nav>
-    </div>
-    <p class="text-white text-center p-5" style="font-family: 'Raleway', sans-serif;">
-        Copyrights. All rights reserved.
-    </p>
-</footer>
-
-
+<script>
+    feather.replace()
+</script>
 <script src="../../assets/js/bootstrap.bundle.min.js"></script>
 <jsp:include page="../../layouts/footer.jsp"/>
 

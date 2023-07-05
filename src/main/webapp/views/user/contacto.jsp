@@ -8,12 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Raleway:wght@300;400;500&display=swap"
-            rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../../assets/css/nav.css" />
     <link rel="icon" href="../../assets/img/OIP.jpg">
+    <jsp:include page="../../layouts/head.jsp"/>
     <jsp:include page="../../layouts/head.jsp"/>
     <title>Contacto</title>
 </head>
@@ -32,7 +31,7 @@
                 <ul class="mt-lg-3 d-lg-flex justify-content-lg-center " style="list-style: none;">
                     <li><a href="../../index.jsp" class="nav-link">Inicio</a></li>
                     <li><a href="" class="nav-link">Categorias</a></li>
-                    <li><a href="" class="nav-link">Ofertas</a></li>
+                    <li><a href="ofertas.jsp" class="nav-link">Ofertas</a></li>
                     <li><a href="" class="nav-link">Novedades</a></li>
                     <li><a href="contacto.jsp" class="nav-link">Contacto</a></li>
                     <li><a href="" class="nav-link">Nosotros</a></li>
