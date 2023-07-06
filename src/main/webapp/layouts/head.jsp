@@ -16,5 +16,12 @@
     .icon:hover{
         color: #EAB543;
     }
+    .icon-button {
+        background: none;
+        border: none;
+        color: inherit;
+        cursor: pointer;
+
+    }
 </style>
 

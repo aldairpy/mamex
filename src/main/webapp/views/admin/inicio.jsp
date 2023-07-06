@@ -7,11 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../assets/css/nav.css" />
     <link rel="icon" href="../../assets/img/OIP.jpg">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
     <jsp:include page="../../layouts/head.jsp"/>
-    <link rel="icon" href="../../assets/img/OIP.jpg">
     <title>Inicio</title>
 </head>
 
@@ -100,16 +99,10 @@
         </div>
     </main>
 
-
-
-
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-
     <script>
         feather.replace()
     </script>
-
+    <script src="../../layouts/footer.jsp"></script>
 </body>
 
 </html>

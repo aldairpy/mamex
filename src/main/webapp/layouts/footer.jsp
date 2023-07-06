@@ -19,3 +19,8 @@
         }, 3000);
     });
 </script>
+
+
+<script>
+    feather.replace()
+</script>

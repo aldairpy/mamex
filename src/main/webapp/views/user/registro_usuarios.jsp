@@ -39,36 +39,15 @@
                 </ul>
             </div>
             <div class="container d-flex justify-content-lg-end justify-content-center">
-                <a href="" class="icon-link p-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="28"
-                         height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
-                         stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"/>
-                        <path d="M21 21l-6 -6"/>
-                    </svg>
+                <button class="icon-button m-2">
+                    <i class="icon" data-feather="search"></i>
+                </button>
+                <a class="m-2" href="../../views/user/inicio_sesion.jsp">
+                    <i class="icon" data-feather="user"></i>
                 </a>
-                <a class="icon-link p-3" href="">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle"
-                         width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
-                         stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/>
-                        <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
-                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"/>
-                    </svg>
-                </a>
-                <a class="icon-link p-3" href="inicio_sesion.jsp">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart"
-                         width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
-                         stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
-                        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
-                        <path d="M17 17h-11v-14h-2"/>
-                        <path d="M6 5l14 1l-1 7h-13"/>
-                    </svg>
-                </a>
+                <button class="icon-button m-2">
+                    <i class="icon" data-feather="shopping-cart"></i>
+                </button>
             </div>
         </div>
     </div>

@@ -37,15 +37,15 @@
                 </ul>
             </div>
             <div class="container d-flex justify-content-lg-end justify-content-sm-center justify-content-md-center">
-                <a href="" class="icon-link p-3">
-                    <i class="icon" data-feather = "search"></i>
+                <button class="icon-button m-2">
+                    <i class="icon" data-feather="search"></i>
+                </button>
+                <a class="m-2" href="../../views/user/inicio_sesion.jsp">
+                    <i class="icon" data-feather="user"></i>
                 </a>
-                <a class="icon-link p-3" href="../../views/user/inicio_sesion.jsp">
-                    <i class="icon" data-feather = "user"></i>
-                </a>
-                <a class="icon-link p-3" href="../../views/user/inicio_sesion.jsp">
-                    <i class="icon" data-feather = "shopping-cart"></i>
-                </a>
+                <button class="icon-button m-2">
+                    <i class="icon" data-feather="shopping-cart"></i>
+                </button>
             </div>
         </div>
     </div>
@@ -138,15 +138,12 @@
 
             </div>
         </div>
-        <div class="col-lg-5 col-12 p-0 d-lg-block d-none">
-            <img class="w-100" src="../../assets/img/image 28.png">
+        <div class="col-lg-5 p-0 d-lg-block d-none">
+            <img class="w-100 vh-100"  src="../../assets/img/image 28.png">
         </div>
     </div>
 </div>
 
-<script>
-    feather.replace()
-</script>
 <script src="../../assets/js/bootstrap.bundle.min.js"></script>
 <jsp:include page="../../layouts/footer.jsp"/>
 
