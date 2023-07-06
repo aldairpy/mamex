@@ -3,9 +3,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <jsp:include page="layouts/head.jsp"/>
     <link rel="icon" href="./assets/img/OIP.jpg">
     <title>Manos Mexicanas</title>
@@ -15,7 +18,8 @@
 <body>
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="./assets/img/OIP.jpg" alt="logo"/></a>
+
+        <a class="navbar-brand" href="#"><img src="${pageContext.request.contextPath}/assets/img/OIP.jpg" alt="logo"/></a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -33,12 +37,17 @@
                 </ul>
             </div>
             <div class="container d-flex justify-content-lg-end justify-content-sm-center justify-content-md-center">
-                <button class="icon-button m-2">
-                    <i class="icon" data-feather="search"></i>
-                </button>
 
-                <a class="m-2" href="./views/user/inicio_sesion.jsp">
-                    <i class="icon" data-feather="user"></i>
+                <a href="" class="icon-link p-3">
+
+                    <i class="icon" data-feather = "search"></i>
+                </a>
+                <a class="icon-link p-3" href="./views/user/inicio_sesion.jsp">
+                   <i class="icon" data-feather = "user"></i>
+                </a>
+                <a class="icon-link p-3" href="views/user/inicio_sesion.jsp">
+                    <i class="icon" data-feather = "shopping-cart"></i>
+
                 </a>
 
                 <button class="icon-button m-2">
@@ -62,8 +71,7 @@
                                 colección de tejidos de alta calidad
                                 cuidadosamente seleccionados para que puedas crear prendas únicas y
                                 proyectos creativos que reflejen tu estilo y pasión por la moda.</em></p>
-                            <a href="./views/user/registro_usuarios.jsp"
-                               class="text-decoration-none text-dark link-animation"
+                            <a href="/user/register-view" class="text-decoration-none text-dark link-animation"
                                style=" font-weight: 700; color:black">
                                 <button class="btn btn-dark m-4"
                                         style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;">
@@ -72,7 +80,7 @@
                             </a>
                         </article>
                         <article class="col-12 col-lg-5 ps-lg-5 ps-sm-0">
-                            <img src="./assets/img/e9be2a1f1471feb0c1b18083309ea295.jpg" alt="img-hilos"
+                            <img src="${pageContext.request.contextPath}/assets/img/e9be2a1f1471feb0c1b18083309ea295.jpg" alt="img-hilos"
                                  class="img-fluid">
                         </article>
                     </div>
@@ -205,8 +213,7 @@
                                     </li>
                                 </ul>
                                 <button class="btn btn-dark m-4"
-                                        style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;"><a
-                                        href="./views/admin/inicio.jsp">Ver más</a>
+                                        style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;">Ver más
                                 </button>
 
                                 </p>
