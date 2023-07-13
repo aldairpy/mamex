@@ -1,22 +1,25 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../assets/css/nav.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif !important;
+        }
+    </style>
     <link rel="icon" href="../../assets/img/OIP.jpg">
-    <jsp:include page="../../layouts/head.jsp"/>
-    <link rel="icon" href="../../assets/img/OIP.jpg">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Inicio</title>
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-light">
+    <nav class="navbar sticky-top navbar-expand-lg bg-white">
         <div class="container">
             <a class="navbar-brand" href="inicio.jsp">
                 <img src="${pageContext.request.contextPath}../../assets/img/OIP.jpg" alt="Bootstrap" width="34" height="34" style="border-radius: 50px;">
@@ -25,7 +28,7 @@
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="btn d-lg-none ms-2 ps-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i data-feather="sidebar"></i></button>
             </button>
             <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
                 <div class="container d-flex justify-content-center">
@@ -43,28 +46,36 @@
                 <img class="d-sm-none d-lg-block" src="${pageContext.request.contextPath}../../assets/img/Rancho_Cucamonga_Tree_16.png" width="34" height="34"
                     style="border-radius: 50px;">
                 <p class="pt-3 ms-3 d-none d-lg-block">Administrador</p>
+
             </div>
         </div>
     </nav>
 
-    <div class="sidebar">
-        <ul class="list-unstyled p-5 mt-5" style="font-size: 14px;">
-            <li class="mb-3"><a href="" class="nav-link"><i data-feather="home"></i><span class="ps-3">Inicio</span></a>
-            </li>
-            <li class="mb-3"><a href="" class="nav-link"><i data-feather="shopping-cart"></i><span
-                        class="ps-3">Órdenes</span></a></li>
-            <li class="mb-3"><a href="" class="nav-link"><i data-feather="tag"></i><span
-                        class="ps-3">Productos</span></a></li>
-            <li class="mb-3"><a href="" class="nav-link"><i data-feather="users"></i><span
-                        class="ps-3">Usuarios</span></a></li>
-            <li class="mb-3"><a href="" class="nav-link"><i data-feather="dollar-sign"></i><span
-                        class="ps-3">Ventas</span></a></li>
-            <li class="mb-3"><a href="" class="nav-link"><i data-feather="settings"></i><span
-                        class="ps-3">Ajustes</span></a></li>
-        </ul>
-    </div>
+
 
     <main>
+        <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Menú</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="sidebar bg-white">
+                    <ul class="list-unstyled p-5 mt-5" style="font-size: 14px;">
+                        <li class="mb-3"><a href="./inicio.jsp" class="nav-link"><i data-feather="home"></i><span class="ps-3">Inicio</span></a></li>
+                        <li class="mb-3"><a href="" class="nav-link"><i data-feather="shopping-cart"></i><span class="ps-3">Órdenes</span></a></li>
+                        <li class="mb-3"><a href="./products.jsp" class="nav-link"><i data-feather="tag"></i><span class="ps-3">Productos</span></a></li>
+                        <li class="mb-3"><a href="" class="nav-link"><i data-feather="users"></i><span class="ps-3">Usuarios</span></a></li>
+                        <li class="mb-3"><a href="" class="nav-link"><i data-feather="dollar-sign"></i><span class="ps-3">Ventas</span></a></li>
+                        <li class="mb-3"><a href="" class="nav-link"><i data-feather="settings"></i><span class="ps-3">Ajustes</span></a></li>
+                    </ul>
+                    <div class="container text-center">
+                        <button class="btn bg-dark" style="color: white;">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container-main bg-body-light">
             <div class="container">
                 <div class="cards d-grid justify-content-between">
@@ -100,16 +111,9 @@
         </div>
     </main>
 
-
-
-
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-
     <script>
         feather.replace()
     </script>
-
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

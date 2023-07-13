@@ -28,8 +28,7 @@ html {
     width: 100%;
     height: 40px;
     line-height: 28px;
-    padding: 0 1rem;
-    padding-left: 2.5rem;
+    padding: 0 1rem 0 2.5rem;
     border: 2px solid transparent;
     border-radius: 8px;
     outline: none;
@@ -47,7 +46,7 @@ input:hover {
     outline: none;
     border-color: #000000;
     background-color: #fff;
-    box-shadow: 0 0 0 3px #f8c291;
+    box-shadow: 0 0 0 3px #000000;
 }
 
 .icon {
@@ -116,6 +115,13 @@ input:hover {
     }
 }
 
+@media (max-width: 1080px){
+    .container-main {
+        margin-left: 0;
+    }
+}
+
+
 .circle {
     border-radius: 50%;
     width: 72px;
@@ -127,3 +133,6 @@ input:hover {
     margin: 0 auto;
     margin-bottom: 20px;
 }
+
+
+

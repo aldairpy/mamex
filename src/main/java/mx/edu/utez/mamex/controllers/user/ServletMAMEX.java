@@ -30,6 +30,7 @@ import java.nio.charset.StandardCharsets;
 public class ServletMAMEX extends HttpServlet {
     private String action;
     private String redirect = "/user/mamex";
+    private String redirectAdmin = "/admin/mamex";
     private String id_user, names, lastnames, email, password;
     private int id_product, quantity;
     private double cost;
@@ -41,13 +42,14 @@ public class ServletMAMEX extends HttpServlet {
         action = req.getServletPath();
         switch (action) {
             case "/user/mamex": //redirigir al inicio
-                redirect = "/index.jsp";
+                redirect = "./index.jsp";
                 break;
+
             case "/user/login": //una vez registrado te llevara a iniciar sesion
                 redirect = "/views/user/inicio_sesion.jsp";
                 break;
             case "/user/register-view": //una vez registrado te llevara a iniciar sesion
-                redirect = "/views/user/registro_usuarios.jsp";
+                redirect = "./views/user/registro_usuarios.jsp";
                 break;
 
             case "/user/contacto":
@@ -61,6 +63,7 @@ public class ServletMAMEX extends HttpServlet {
             case "/user/go-to-pay":{
                 redirect = "/views/user/payment.jsp";
             }
+
             default:
                 System.out.println(action);
                 break;
