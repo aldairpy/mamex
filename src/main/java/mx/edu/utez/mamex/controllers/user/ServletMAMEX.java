@@ -19,11 +19,15 @@ import java.nio.charset.StandardCharsets;
         "/user/login",
         "/user/register-successfull",
         "/user/admin/dashboard",
-        "/user/register-view"
+        "/user/register-view",
+        "/user/contacto",
+        "/admin/crear_producto",
+        "/admin/mamex"
 }) //endpoints para saber a donde redirigir al usuario
 public class ServletMAMEX extends HttpServlet {
     private String action;
     private String redirect = "/user/mamex";
+    private String redirectAdmin = "/admin/mamex";
     private String id_user, names, lastnames, email, password;
 
     @Override
@@ -32,14 +36,24 @@ public class ServletMAMEX extends HttpServlet {
         action = req.getServletPath();
         switch (action) {
             case "/user/mamex": //redirigir al inicio
-                redirect = "/index.jsp";
+                redirect = "./index.jsp";
                 break;
             case "/user/register-successfull": //una vez registrado te llevara a iniciar sesion
-                redirect = "/views/user/inicio_sesion.jsp";
+                redirect = "./views/user/inicio_sesion.jsp";
                 break;
             case "/user/register-view": //una vez registrado te llevara a iniciar sesion
-                redirect = "/views/user/registro_usuarios.jsp";
+                redirect = "./views/user/registro_usuarios.jsp";
                 break;
+            case "/user/contacto":
+                redirect = "./views/user/contacto.jsp";
+                break;
+            case "/admin/mamex":
+                redirectAdmin = "./views/admin/inicio.jsp";
+                break;
+            case "/admin/crear_producto":
+                redirectAdmin = "./views/admin/crear_producto.jsp";
+                break;
+
             default:
                 System.out.println(action);
                 break;

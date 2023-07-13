@@ -3,12 +3,9 @@
 <html lang="en">
 
 <head>
-
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <jsp:include page="layouts/head.jsp"/>
     <link rel="icon" href="./assets/img/OIP.jpg">
     <title>Manos Mexicanas</title>
@@ -18,41 +15,39 @@
 <body>
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-
-        <a class="navbar-brand" href="#"><img src="${pageContext.request.contextPath}/assets/img/OIP.jpg" alt="logo"/></a>
+        <a class="navbar-brand ms-lg-5" href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/assets/img/OIP.jpg" alt="logo"/></a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="ms-5 collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse text-center navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <ul class="mt-lg-3 d-lg-flex justify-content-lg-center " style="list-style: none;">
-                    <li><a href="index.jsp" class="nav-link">Inicio</a></li>
+                <ul class="mt-lg-3 d-lg-flex justify-content-lg-center justify-content-center list-unstyled">
+                    <li><a href="./user/mamex" class="nav-link">Inicio</a></li>
                     <li><a href="" class="nav-link">Categorias</a></li>
-                    <li><a href="./views/user/ofertas.jsp" class="nav-link">Ofertas</a></li>
                     <li><a href="" class="nav-link">Novedades</a></li>
-                    <li><a href="./views/user/contacto.jsp" class="nav-link">Contacto</a></li>
+                    <li><a href="./user/contacto" class="nav-link">Contacto</a></li>
                     <li><a href="" class="nav-link">Nosotros</a></li>
                 </ul>
             </div>
-            <div class="container d-flex justify-content-lg-end justify-content-sm-center justify-content-md-center">
+            <div class="container">
+                <div class="container d-flex justify-content-lg-end justify-content-center justify-content-md-center">
+                    <button class="icon-button m-2">
+                        <i class="icon" data-feather="search"></i>
+                    </button>
 
-                <a href="" class="icon-link p-3">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon" data-feather="user"></i></button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="./views/user/profile.jsp">Mi perfil</a></li>
+                            <li><a class="dropdown-item" href="./views/user/registro_usuarios.jsp">Registrarse</a></li>
+                        </ul>
 
-                    <i class="icon" data-feather = "search"></i>
-                </a>
-                <a class="icon-link p-3" href="./views/user/inicio_sesion.jsp">
-                   <i class="icon" data-feather = "user"></i>
-                </a>
-                <a class="icon-link p-3" href="views/user/inicio_sesion.jsp">
-                    <i class="icon" data-feather = "shopping-cart"></i>
 
-                </a>
-
-                <button class="icon-button m-2">
-                    <i class="icon" data-feather="shopping-cart"></i>
-                </button>
+                    <button class="icon-button m-2">
+                        <i class="icon" data-feather="shopping-cart"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -65,13 +60,13 @@
                 <section class="container">
                     <div class="row">
                         <article class="col-12 col-lg-7">
-                            <h2 class="display-4 mb-5 mt-5">Descubre la belleza en cada hilo</h2>
+                            <h2 class="display-4 mb-5 mt-lg-5">Descubre la belleza en cada hilo</h2>
                             <p class="lead text-sm-start text-md-start"><em>Sumérgete en un mundo de
                                 posibilidades con nuestra amplia
                                 colección de tejidos de alta calidad
                                 cuidadosamente seleccionados para que puedas crear prendas únicas y
                                 proyectos creativos que reflejen tu estilo y pasión por la moda.</em></p>
-                            <a href="/user/register-view" class="text-decoration-none text-dark link-animation"
+                            <a href="./views/user/registro_usuarios.jsp" class="text-decoration-none text-dark link-animation"
                                style=" font-weight: 700; color:black">
                                 <button class="btn btn-dark m-4"
                                         style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;">
@@ -79,9 +74,9 @@
                                 </button>
                             </a>
                         </article>
-                        <article class="col-12 col-lg-5 ps-lg-5 ps-sm-0">
+                        <article class="col-lg-5 ps-lg-5 ps-sm-0">
                             <img src="${pageContext.request.contextPath}/assets/img/e9be2a1f1471feb0c1b18083309ea295.jpg" alt="img-hilos"
-                                 class="img-fluid">
+                                 class="">
                         </article>
                     </div>
                 </section>
@@ -96,10 +91,7 @@
                 <h2 class="display-4 text-center">Explora nuestra gama de exquisitos tejidos</h2>
                 <p class=" mt-4 text-center text-sm-center text-md-center m-4 fs-4"
                 >Desde suaves algodones hasta lujosas
-                    sedas
-                    y
-                    duraderos linos, encontrarás la calidad y
-                    variedad que necesitas para dar vida a tus ideas. Descubre la esencia de la elegancia,
+                    sedas y duraderos linos, encontrarás la calidad y variedad que necesitas para dar vida a tus ideas. Descubre la esencia de la elegancia,
                     la comodidad y la creatividad en cada fibra, y deja que tus proyectos tejidos cuenten historias
                     únicas en
                     cada puntada</p>
@@ -177,12 +169,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="container pt-5 mt-5">
+                    <div class="container pt-5 mt-5 border">
                         <div class="row justify-content-evenly">
-                            <div class="col-12 col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <img class="img-fluid" src="./assets/img/descarga.jfif" alt="img5">
                             </div>
-                            <div class="col-12 col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <img class="img-fluid" src="./assets/img/copia.jfif" alt="img6">
                             </div>
                             <div class="col-12 col-lg-4 ps-5 mt-5">
@@ -213,7 +205,8 @@
                                     </li>
                                 </ul>
                                 <button class="btn btn-dark m-4"
-                                        style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;">Ver más
+                                        style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;">
+                                    <a href="./views/admin/inicio.jsp">Ver mas</a>
                                 </button>
 
                                 </p>
