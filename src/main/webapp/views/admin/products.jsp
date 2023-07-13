@@ -91,16 +91,13 @@
     <div class="container-main">
         <div class="card text-end">
             <div class="card-title pt-4 pe-3">
-                <button class="btn btn-danger btn-outline pt-2 me-2"><i data-feather="trash"></i></button>
-                <button class="btn btn-primary btn-outline pt-2"><i data-feather="edit"></i></button>
-                <a href="./crear_producto.jsp">
-                    <button class="btn btn-success btn-outline pt-2 ms-2"><i data-feather="plus"></i></button>
+                <a style="text-decoration: none; color:black" href="./crear_producto.jsp">
+                    <small>Agregar productos</small><button class="btn btn-success btn-outline pt-2 ms-2"><i data-feather="plus"></i></button>
                 </a>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-striped caption-top">
-                        <caption>Descripción general</caption>
                         <thead>
                         <tr>
                             <th scope="col">ID</th>
@@ -109,9 +106,9 @@
                             <th scope="col">Categoría</th>
                             <th scope="col">Disponibilidad</th>
                             <th scope="col">Inventario</th>
+                            <th scope="col">Acciones</th>
                         </tr>
                         </thead>
-
                         <tbody>
                         <tr>
                             <th scope="row">1</th>
@@ -120,6 +117,13 @@
                             <td>Categoría 1</td>
                             <td>Disponible</td>
                             <td>100</td>
+                            <td>
+                                <a href="./editar_producto.jsp">
+                                    <button class="btn btn-primary btn-outline"><i data-feather="edit"></i></button>
+                                </a>
+                                <button class="btn btn-danger btn-outline"><i data-feather="trash"></i></button>
+                            </td>
+
                         </tr>
                         <tr>
                             <th scope="row">2</th>
@@ -128,6 +132,12 @@
                             <td>Categoría 2</td>
                             <td>Disponible</td>
                             <td>200</td>
+                            <td>
+                                <a href="./editar_producto.jsp">
+                                    <button class="btn btn-primary btn-outline"><i data-feather="edit"></i></button>
+                                </a>
+                                <button class="btn btn-danger btn-outline"><i data-feather="trash"></i></button>
+                            </td>
                         </tr>
                         </tbody>
                     </table>
