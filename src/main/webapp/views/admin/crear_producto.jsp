@@ -116,6 +116,9 @@
                 <li class="mb-3"><a href="" class="nav-link"><i data-feather="settings"></i><span
                         class="ps-3">Ajustes</span></a></li>
             </ul>
+            <div class="container text-center">
+                <button class="btn bg-dark" style="color: white;">Cerrar sesión</button>
+            </div>
         </div>
     </div>
 </div>
@@ -124,9 +127,7 @@
     <div class="container-main">
         <div class="card mt-4">
             <h6 class="text-start mt-4 ms-3 fw-bold">Información</h6>
-            <div class="text-end mt-3 me-3">
-                <button class="btn btn-outline-dark">Publicar</button>
-            </div>
+
             <div class="card-body">
                 <div class="container">
                     <div class="row d-flex ">
@@ -137,10 +138,11 @@
                                     precio e imagen.</small>
                                 <small>Dale a tu producto un título breve y claro. 50-60 caracteres es la longitud
                                     recomendada.</small>
-                                <form action="" class="mt-2">
+                                <form action="" class="mt-3">
                                     <small class="fw-bold">Título*</small>
                                     <input type="text" class="form-control w-50 mb-2" placeholder="Gorro, bolso..."
                                            aria-label="Title">
+                                    <br>
                                     <small>Da a tu producto una descripción breve y clara. <br> 120-160 caracteres es la
                                         longitud
                                         recomendada para los motores de búsqueda.
@@ -171,7 +173,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="card mt-4">
+            <div class="card mt-4" style="background-color: #f6f6f6;">
                 <div class="card-header text-start">
                     <h6 class="card-title fw-bold">Imágenes</h6>
                     <div class="card-body">
@@ -214,6 +216,9 @@
                             </div>
                             <input type="file" id="file">
                         </label>
+                        <div class="text-end mt-3 me-3">
+                            <button class="btn btn-outline-dark">Publicar</button>
+                        </div>
                     </div>
                 </div>
             </div>

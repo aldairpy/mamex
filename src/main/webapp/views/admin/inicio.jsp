@@ -69,6 +69,9 @@
                         <li class="mb-3"><a href="" class="nav-link"><i data-feather="dollar-sign"></i><span class="ps-3">Ventas</span></a></li>
                         <li class="mb-3"><a href="" class="nav-link"><i data-feather="settings"></i><span class="ps-3">Ajustes</span></a></li>
                     </ul>
+                    <div class="container text-center">
+                        <button class="btn bg-dark" style="color: white;">Cerrar sesión</button>
+                    </div>
                 </div>
             </div>
         </div>

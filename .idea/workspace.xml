@@ -10,19 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layouts/headAdmin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layouts/nav.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/crear_producto.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/products.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/user/profile.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletMAMEX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletMAMEX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/crear_producto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/crear_producto.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/inicio.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/inicio.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/registro_usuarios.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/registro_usuarios.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/products.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +245,7 @@
       <workItem from="1689178001451" duration="5160000" />
       <workItem from="1689216288481" duration="41000" />
       <workItem from="1689216354089" duration="4598000" />
-      <workItem from="1689222551358" duration="303000" />
+      <workItem from="1689222551358" duration="3622000" />
     </task>
     <servers />
   </component>
