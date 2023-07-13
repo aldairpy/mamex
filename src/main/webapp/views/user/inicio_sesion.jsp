@@ -62,10 +62,10 @@
             <div class="container-fluid">
                 <form class="text-center w-50 m-auto pt-4" novalidate action="/user/login" method="post">
                     <div class="m-4">
-                        <input class="form-control" type="email" id="email" placeholder="E-mail" required>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="E-mail" required>
                     </div>
                     <div class="m-4">
-                        <input class="form-control" type="password" id="password" placeholder="Contraseña" required>
+                        <input class="form-control" type="password" id="password" name="password" placeholder="Contraseña" required>
                     </div>
                     <a class="text-decoration-none text-dark link-animation"><button type="submit" class="btn btn-dark m-4"
                                                                                      style="font-weight: 500; border-radius: 0px; padding: 10px; width: 150px;">Iniciar
