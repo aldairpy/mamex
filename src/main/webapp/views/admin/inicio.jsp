@@ -21,8 +21,8 @@
 <body>
     <nav class="navbar sticky-top navbar-expand-lg bg-white">
         <div class="container">
-            <a class="navbar-brand" href="./inicio.jsp">
-                <img src="../../assets/img/OIP.jpg" alt="Bootstrap" width="34" height="34" style="border-radius: 50px;">
+            <a class="navbar-brand" href="inicio.jsp">
+                <img src="${pageContext.request.contextPath}../../assets/img/OIP.jpg" alt="Bootstrap" width="34" height="34" style="border-radius: 50px;">
             </a>
             <p class="pt-3 ms-5" style="font-size: 20px;">Inicio</p>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -43,7 +43,7 @@
                         <input placeholder="Buscar" type="search" class="input">
                     </div>
                 </div>
-                <img class="d-sm-none d-lg-block" src="../../assets/img/Rancho_Cucamonga_Tree_16.png" width="34" height="34"
+                <img class="d-sm-none d-lg-block" src="${pageContext.request.contextPath}../../assets/img/Rancho_Cucamonga_Tree_16.png" width="34" height="34"
                     style="border-radius: 50px;">
                 <p class="pt-3 ms-3 d-none d-lg-block">Administrador</p>
 
