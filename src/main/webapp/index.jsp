@@ -26,9 +26,11 @@
             <div class="navbar-nav">
                 <ul class="mt-lg-3 d-lg-flex justify-content-lg-center justify-content-center list-unstyled">
                     <li><a href="./user/mamex" class="nav-link">Inicio</a></li>
+
                     <li><a href="" class="nav-link">Categorias</a></li>
                     <li><a href="" class="nav-link">Novedades</a></li>
                     <li><a href="./user/contacto" class="nav-link">Contacto</a></li>
+
                     <li><a href="" class="nav-link">Nosotros</a></li>
                 </ul>
             </div>
