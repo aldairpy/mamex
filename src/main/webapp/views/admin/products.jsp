@@ -92,7 +92,7 @@
         <div class="card text-end">
             <div class="card-title pt-4 pe-3">
                 <a style="text-decoration: none; color:black" href="./crear_producto.jsp">
-                    <small>Agregar productos</small><button class="btn btn-success btn-outline pt-2 ms-2"><i data-feather="plus"></i></button>
+                    <small>Agregar productos</small><button class="btn btn-success btn-sm btn-outline pt-2 ms-2"><i data-feather="plus"></i></button>
                 </a>
             </div>
             <div class="card-body">
@@ -113,15 +113,15 @@
                         <tr>
                             <th scope="row">1</th>
                             <td>Producto 1</td>
-                            <td>$ 100.00</td>
+                            <td>$100.00</td>
                             <td>Categoría 1</td>
                             <td>Disponible</td>
                             <td>100</td>
                             <td>
-                                <a href="./editar_producto.jsp">
-                                    <button class="btn btn-primary btn-outline"><i data-feather="edit"></i></button>
+                                <a href="./editar_producto.jsp" style="text-decoration: none">
+                                    <button class="btn btn-primary btn-sm btn-outline"><i data-feather="edit"></i></button>
                                 </a>
-                                <button class="btn btn-danger btn-outline"><i data-feather="trash"></i></button>
+                                <button class="btn btn-danger btn-sm btn-outline"><i data-feather="trash"></i></button>
                             </td>
 
                         </tr>
@@ -133,10 +133,10 @@
                             <td>Disponible</td>
                             <td>200</td>
                             <td>
-                                <a href="./editar_producto.jsp">
-                                    <button class="btn btn-primary btn-outline"><i data-feather="edit"></i></button>
+                                <a href="./editar_producto.jsp" style="text-decoration: none">
+                                    <button class="btn btn-primary btn-sm btn-outline"><i data-feather="edit"></i></button>
                                 </a>
-                                <button class="btn btn-danger btn-outline"><i data-feather="trash"></i></button>
+                                <button class="btn btn-danger btn-sm btn-outline"><i data-feather="trash"></i></button>
                             </td>
                         </tr>
                         </tbody>

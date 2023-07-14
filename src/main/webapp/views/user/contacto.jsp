@@ -12,46 +12,13 @@
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../../assets/css/nav.css" />
     <link rel="icon" href="../../assets/img/OIP.jpg">
-    <jsp:include page="../../layouts/head.jsp"/>
+
     <jsp:include page="../../layouts/head.jsp"/>
     <title>Contacto</title>
 </head>
 
 <body>
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark ">
-    <div class="container">
-        <a class="navbar-brand" href="#"><img src="../../assets/img/OIP.jpg" alt="logo" /></a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <ul class="mt-lg-3 d-lg-flex justify-content-lg-center " style="list-style: none;">
-                    <li><a href="../../index.jsp" class="nav-link">Inicio</a></li>
-                    <li><a href="" class="nav-link">Categorias</a></li>
-                    <li><a href="ofertas.jsp" class="nav-link">Ofertas</a></li>
-                    <li><a href="" class="nav-link">Novedades</a></li>
-                    <li><a href="contacto.jsp" class="nav-link">Contacto</a></li>
-                    <li><a href="" class="nav-link">Nosotros</a></li>
-                </ul>
-            </div>
-            <div class="container d-flex justify-content-lg-end justify-content-center">
-                <button class="icon-button m-2">
-                    <i class="icon" data-feather="search"></i>
-                </button>
-                <a class="m-2" href="../../views/user/inicio_sesion.jsp">
-                    <i class="icon" data-feather="user"></i>
-                </a>
-                <button class="icon-button m-2">
-                    <i class="icon" data-feather="shopping-cart"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-</nav>
-
+<jsp:include page="../../layouts/nav.jsp"/>
 
 <div class="container">
     <div class="row">

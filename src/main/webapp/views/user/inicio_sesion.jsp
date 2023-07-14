@@ -17,40 +17,7 @@
 
 <body>
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark ">
-    <div class="container">
-        <a class="navbar-brand" href="#"><img src="../../assets/img/OIP.jpg" alt="logo" /></a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <ul class="mt-lg-3 d-lg-flex justify-content-lg-center " style="list-style: none;">
-                    <li><a href="../../index.jsp" class="nav-link">Inicio</a></li>
-                    <li><a href="" class="nav-link">Categorias</a></li>
-                    <li><a href="ofertas.jsp" class="nav-link">Ofertas</a></li>
-                    <li><a href="" class="nav-link">Novedades</a></li>
-                    <li><a href="contacto.jsp" class="nav-link">Contacto</a></li>
-                    <li><a href="" class="nav-link">Nosotros</a></li>
-                </ul>
-            </div>
-            <div class="container d-flex justify-content-lg-end justify-content-sm-center justify-content-md-center">
-                <button class="icon-button m-2">
-                    <i class="icon" data-feather="search"></i>
-                </button>
-                <a class="m-2" href="../../views/user/inicio_sesion.jsp">
-                    <i class="icon" data-feather="user"></i>
-                </a>
-                <button class="icon-button m-2">
-                    <i class="icon" data-feather="shopping-cart"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-</nav>
-
+<jsp:include page="../../layouts/nav.jsp"/>
 
 <div class="container-fluid">
     <div class="row">
@@ -74,7 +41,7 @@
                 </form>
                 <div class="container">
                     <div class="col-12 text-center mt-5">
-                        <p class="text-center">¿No tienes una cuenta? <a href="registro_usuarios.jsp"
+                        <p class="text-center">¿No tienes una cuenta? <a href="/user/register-view"
                                                                          class="text-decoration-none text-dark link-animation"
                                                                          style=" font-weight: 700; color:black">Regístrate</a></p>
                         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#resetPassword">
@@ -133,18 +100,16 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
         <div class="col-lg-5 p-0 d-lg-block d-none">
-            <img class="w-100 vh-100"  src="../../assets/img/image 28.png">
+            <img class="w-100 vh-100"  src="${pageContext.request.contextPath}/assets/img/image 28.png">
         </div>
     </div>
 </div>
 
-<script src="../../assets/js/bootstrap.bundle.min.js"></script>
+<script src="${pageContext.request.contextPath}/assets/js/bootstrap.bundle.min.js"></script>
 <jsp:include page="../../layouts/footer.jsp"/>
 
 </body>
