@@ -20,9 +20,8 @@ import java.nio.charset.StandardCharsets;
         "/user/register-successfull",
         "/user/admin/dashboard",
         "/user/register-view",
-        "/user/contacto",
-        "/admin/crear_producto",
-        "/admin/mamex"
+        "/user/contacto"
+
 }) //endpoints para saber a donde redirigir al usuario
 public class ServletMAMEX extends HttpServlet {
     private String action;
@@ -44,14 +43,9 @@ public class ServletMAMEX extends HttpServlet {
             case "/user/register-view": //una vez registrado te llevara a iniciar sesion
                 redirect = "./views/user/registro_usuarios.jsp";
                 break;
+
             case "/user/contacto":
-                redirect = "./views/user/contacto.jsp";
-                break;
-            case "/admin/mamex":
-                redirectAdmin = "./views/admin/inicio.jsp";
-                break;
-            case "/admin/crear_producto":
-                redirectAdmin = "./views/admin/crear_producto.jsp";
+                redirect = "/views/user/contacto.jsp";
                 break;
 
             default:
