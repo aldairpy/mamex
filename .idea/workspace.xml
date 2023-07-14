@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletMAMEX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletMAMEX.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

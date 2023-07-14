@@ -49,7 +49,7 @@ public class ServletMAMEX extends HttpServlet {
                 redirect = "/views/user/inicio_sesion.jsp";
                 break;
             case "/user/register-view": //una vez registrado te llevara a iniciar sesion
-                redirect = "./views/user/registro_usuarios.jsp";
+                redirect = "/views/user/registro_usuarios.jsp";
                 break;
 
             case "/user/contacto":
