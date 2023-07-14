@@ -10,6 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="">
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletMAMEX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletMAMEX.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
@@ -120,7 +121,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mamex" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.10" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="mamex" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.9" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -269,6 +270,7 @@
       <workItem from="1689043719682" duration="6462000" />
       <workItem from="1689110119908" duration="2118000" />
       <workItem from="1689276157639" duration="1543000" />
+
       <workItem from="1689283297318" duration="1694000" />
       <workItem from="1689354332825" duration="1813000" />
     </task>
