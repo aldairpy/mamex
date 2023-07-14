@@ -42,14 +42,14 @@ public class ServletMAMEX extends HttpServlet {
         action = req.getServletPath();
         switch (action) {
             case "/user/mamex": //redirigir al inicio
-                redirect = "./index.jsp";
+                redirect = "/index.jsp";
                 break;
 
             case "/user/login": //una vez registrado te llevara a iniciar sesion
                 redirect = "/views/user/inicio_sesion.jsp";
                 break;
             case "/user/register-view": //una vez registrado te llevara a iniciar sesion
-                redirect = "./views/user/registro_usuarios.jsp";
+                redirect = "/views/user/registro_usuarios.jsp";
                 break;
 
             case "/user/contacto":

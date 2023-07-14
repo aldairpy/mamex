@@ -20,44 +20,7 @@
 </head>
 
 <body>
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-
-        <a class="navbar-brand ms-lg-5" href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/assets/img/OIP.jpg" alt="logo"/></a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse text-center navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <ul class="mt-lg-3 d-lg-flex justify-content-lg-center justify-content-center list-unstyled">
-                    <li><a href="./user/mamex" class="nav-link">Inicio</a></li>
-                    <li><a href="" class="nav-link">Categorias</a></li>
-                    <li><a href="" class="nav-link">Novedades</a></li>
-                    <li><a href="./user/contacto" class="nav-link">Contacto</a></li>
-                    <li><a href="" class="nav-link">Nosotros</a></li>
-                </ul>
-            </div>
-            <div class="container">
-                <div class="container d-flex justify-content-lg-end justify-content-center justify-content-md-center">
-                    <button class="icon-button m-2">
-                        <i class="icon" data-feather="search"></i>
-                    </button>
-
-                    <a href="./views/user/inicio_sesion.jsp" class="icon-button m-2">
-                        <i class="icon" data-feather="user"></i>
-                    </a>
-
-                    <button class="icon-button m-2">
-                        <i class="icon" data-feather="shopping-cart"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav>
-
+<jsp:include page="../../layouts/nav.jsp"/>
 
 <div class="container-fluid">
     <div class="row">
@@ -89,33 +52,12 @@
                             style="font-weight: 500; border-radius: 0px; padding: 10px; width: 150px;">Regístrate
                     </button>
 
-                    <!-- Agrega la ventana modal -->
-                    <div id="modal-registro" class="modal fade" tabindex="-1" role="dialog">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Registro Exitoso</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Tu registro ha sido exitoso. ¡Bienvenido/a a nuestro sitio web!</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </form>
 
 
                 <div class="container">
                     <div class="col-12 text-center">
-                        <p class="text-center mt-5">¿Ya tienes una cuenta? <a href="inicio_sesion.jsp"
+                        <p class="text-center mt-5">¿Ya tienes una cuenta? <a href="/user/login"
                                                                               class="text-decoration-none text-dark link-animation"
                                                                               style=" font-weight: 700; color:black">Inicia
                             sesión</a></p>
@@ -126,7 +68,7 @@
             </div>
         </div>
         <div class="col-lg-5 col-12 p-0 d-none d-md-none d-lg-block d-md-block">
-            <img class="w-100 vh-100" src="../../assets/img/image 27.png" alt="imagen_registro">
+            <img class="w-100 vh-100" src="${pageContext.request.contextPath}/assets/img/image 27.png" alt="imagen_registro">
         </div>
 
     </div>
