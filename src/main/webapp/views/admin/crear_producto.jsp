@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,17 +53,15 @@
         }
 
     </style>
-    <link rel="icon" href="../../assets/img/OIP.jpg">
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../assets/css/styles.css">
-    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" href="${pageContext.request.contextPath}/assets/img/OIP.jpg">
+    <jsp:include page="../../layouts/headAdmin.jsp"/>
     <title>MAMEX</title>
 </head>
 <body>
 <nav class="navbar sticky-top navbar-expand-lg bg-white">
     <div class="container">
         <a class="navbar-brand" href="./inicio.jsp">
-            <img src="../../assets/img/OIP.jpg" alt="Bootstrap" width="34" height="34" style="border-radius: 50px;">
+            <img src="${pageContext.request.contextPath}/assets/img/OIP.jpg" alt="Bootstrap" width="34" height="34" style="border-radius: 50px;">
         </a>
         <p class="pt-3 ms-5" style="font-size: 20px;">Producto</p>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -158,10 +157,10 @@
                             <div class="container w-50 mt-3">
                                 <label class="input-group-text" for="inputGroupSelect01">Categoría</label>
                                 <select class="form-select" id="inputGroupSelect01">
-                                    <option selected>Elegir</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option value="1">c</option>
+                                    <option value="2">One</option>
+                                    <option value="3">Two</option>
+                                    <option value="4">Three</option>
                                 </select>
                                 <span class="input-group-text mt-4" id="basic-addon1">Precio</span>
                                 <input type="text" class="form-control" placeholder="$" aria-label="Price"
@@ -227,8 +226,6 @@
     </div>
 </main>
 
-
-<script src="../../assets/js/bootstrap.bundle.min.js"></script>
 <jsp:include page="../../layouts/footer.jsp"/>
 </body>
 </html>

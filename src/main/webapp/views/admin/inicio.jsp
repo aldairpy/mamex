@@ -11,10 +11,7 @@
             font-family: 'Inter', sans-serif !important;
         }
     </style>
-    <link rel="icon" href="../../assets/img/OIP.jpg">
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../assets/css/styles.css">
-    <script src="https://unpkg.com/feather-icons"></script>
+    <jsp:include page="../../layouts/headAdmin.jsp"/>
     <title>Inicio</title>
 </head>
 
@@ -111,9 +108,6 @@
         </div>
     </main>
 
-    <script>
-        feather.replace()
-    </script>
-    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <jsp:include page="../../layouts/footer.jsp"/>
 </body>
 </html>
