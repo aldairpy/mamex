@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <jsp:include page="layouts/head.jsp"/>
-    <link rel="icon" href="./assets/img/OIP.jpg">
+    <link rel="icon" href="${pageContext.request.contextPath}/assets/img/OIP.jpg">
     <title>Manos Mexicanas</title>
 
 </head>
@@ -137,10 +137,10 @@
                     <div class="container pt-5 mt-5 border">
                         <div class="row justify-content-evenly">
                             <div class="col-lg-4 col-md-6">
-                                <img class="img-fluid" src="./assets/img/descarga.jfif" alt="img5">
+                                <img class="img-fluid" src="${pageContext.request.contextPath}/assets/img/descarga.jfif" alt="img5">
                             </div>
                             <div class="col-lg-4 col-md-6">
-                                <img class="img-fluid" src="./assets/img/copia.jfif" alt="img6">
+                                <img class="img-fluid" src="${pageContext.request.contextPath}/assets/img/copia.jfif" alt="img6">
                             </div>
                             <div class="col-12 col-lg-4 ps-5 mt-5">
                                 <p class="fs-lg-5">¡Bienvenido a Manos Mexicanas! Aquí encontrarás mucho más que simples
@@ -171,7 +171,7 @@
                                 </ul>
                                 <button class="btn btn-dark m-4"
                                         style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;">
-                                    <a href="./views/admin/inicio.jsp">Ver mas</a>
+                                    <a href="">Ver mas</a>
                                 </button>
 
                                 </p>
@@ -204,13 +204,13 @@
                     </div>
                     <div class="carousel-inner" id="myCarousel">
                         <div class="carousel-item active">
-                            <img src="./assets/img/Rancho_Cucamonga_Tree_16.png" class="d-block w-100" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/Rancho_Cucamonga_Tree_16.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/img/FwBEgeVX0AAeJqf.jpg" class="d-block w-100" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/FwBEgeVX0AAeJqf.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/img/R.jpg" class="d-block w-100" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/R.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"

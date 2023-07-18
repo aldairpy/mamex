@@ -24,3 +24,17 @@
 <script>
     feather.replace()
 </script>
+
+<script>
+    document.getElementById("unlogin").addEventListener("click", function (){
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/user/unlogin',  true);
+        xhr.setRequestHeader('Content-Type', 'aplication/x-wwww-form-urlencoded');
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4 && xhr.status == 200){
+                alert('Se ha cerrado la sesion correctamente')
+            }
+        };
+        xhr.send('logout=true');
+    });
+</script>

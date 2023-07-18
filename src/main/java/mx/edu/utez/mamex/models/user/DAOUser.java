@@ -55,6 +55,22 @@ public class DAOUser implements DAORepository<User> {
 
     @Override
     public boolean update(User object) {
+        try{
+            conn = new MySQLConnection().connect();
+            String query = "update users set names = ?, lastnames = ?, email = ?, birthday = ?, gender = ?" +
+                    ", img_user = ? where user_id = ?;";
+            pstm = conn.prepareStatement(query);
+            pstm.setString(1, object.getNames());
+            pstm.setString(2, object.getLastnames());
+            pstm.setString(3, object.getEmail());
+            pstm.setString(4, object.getBirthday());
+            pstm.setString(5, object.getGender());
+            pstm.setBlob(6, object.getImg_user());
+            pstm.setLong(7, object.getId());
+            return pstm.executeUpdate() > 0;
+        }catch (SQLException e){
+            Logger.getLogger(DAOUser.class.getName()).log(Level.SEVERE, "Error update" + e.getMessage());
+        }
         return false;
     }
 

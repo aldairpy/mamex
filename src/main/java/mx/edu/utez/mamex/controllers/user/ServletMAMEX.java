@@ -1,5 +1,6 @@
 package mx.edu.utez.mamex.controllers.user;
 
+import java.sql.Blob;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -25,13 +26,19 @@ import java.nio.charset.StandardCharsets;
         "/user/contacto",
         "/user/add-to-cart",
         "/user/cart-view",
-        "/user/go-to-pay"
+        "/user/go-to-pay",
+        "/user/admin/products",
+        "/user/admin/create-products",
+        "/user/unlogin",
+        "/user/profile",
+        "/user/update-profile"
 }) //endpoints para saber a donde redirigir al usuario
 public class ServletMAMEX extends HttpServlet {
     private String action;
     private String redirect = "/user/mamex";
     private String redirectAdmin = "/admin/mamex";
-    private String id_user, names, lastnames, email, password;
+    private String id, names, lastnames, email, password, birthday, gender, img_user;
+    //private Blob img_user;
     private int id_product, quantity;
     private double cost;
     HttpSession session;
@@ -58,11 +65,23 @@ public class ServletMAMEX extends HttpServlet {
 
             case "/user/admin/dashboard":{
                 redirect = "/views/admin/inicio.jsp";
-            }
+            }break;
+
+            case "/user/admin/products":{
+                redirect = "/views/admin/products.jsp";
+            }break;
+
+            case "/user/admin/create-products":{
+                redirect = "/views/admin/crear_producto.jsp";
+            }break;
 
             case "/user/go-to-pay":{
                 redirect = "/views/user/payment.jsp";
-            }
+            }break;
+
+            case "/user/profile":{
+                redirect = "/views/user/profile.jsp";
+            }break;
 
             default:
                 System.out.println(action);
@@ -135,7 +154,7 @@ public class ServletMAMEX extends HttpServlet {
                 try {
                     session = req.getSession();
                     session.invalidate();
-                    redirect = "/user/login?result =" + true
+                    redirect = "/user/mamex?result =" + true
                             + "&message" + URLEncoder.encode("Sesion cerrada correctamente", StandardCharsets.UTF_8);;
                 }catch (Exception e){
                     System.out.println("Error: " + e.getMessage());
@@ -146,10 +165,29 @@ public class ServletMAMEX extends HttpServlet {
 
             case "/user/add-to-cart":{
                 try {
-                    id_user = req.getParameter("id_user");
+                    id = req.getParameter("id_user");
                     id_product = Integer.parseInt(req.getParameter("id_product"));
                     quantity = Integer.parseInt(req.getParameter("quantity"));
                     cost = Integer.parseInt(req.getParameter("cost"));
+                }catch (Exception e){}
+            }break;
+
+            case "/user/update-profile":{
+                try {
+                    names = req.getParameter("names");
+                    lastnames = req.getParameter("lastnames");
+                    email = req.getParameter("email");
+                    birthday = req.getParameter("birthday");
+                    gender = req.getParameter("gender");
+                    img_user = req.getParameter("img_user");
+                    User user = new User(Long.parseLong(id), names, lastnames, email, birthday, gender, img_user);
+                    if(new DAOUser().update(user)){
+                        redirect = "/user/profile?result=" + true
+                                + "&message" + URLEncoder.encode("Perfil actualizado correctamente", StandardCharsets.UTF_8);
+                    }else{
+                        redirect = "/user/profile?result=" + false
+                                + "&message" + URLEncoder.encode("Error al actualizar el perfil", StandardCharsets.UTF_8);
+                    }
                 }catch (Exception e){}
             }break;
 
