@@ -9,22 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/F1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/F2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/F3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/F4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/user/personal_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletMAMEX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletMAMEX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/crear_producto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/crear_producto.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/nosotros.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/nosotros.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/registro_usuarios.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/registro_usuarios.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,11 +56,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;betov2&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;aldairv2&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/josue/Documents/Apps Web/Apps/Mike/secondapp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -127,9 +111,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mamex" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.10" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="corretto-11">
-
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+    <configuration name="mamex" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.9" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -277,19 +259,13 @@
       <workItem from="1689043719682" duration="6462000" />
       <workItem from="1689110119908" duration="2118000" />
       <workItem from="1689276157639" duration="1543000" />
-
       <workItem from="1689283297318" duration="1694000" />
-      <workItem from="1689354332825" duration="2621000" />
-      <workItem from="1689370886209" duration="5376000" />
-      <workItem from="1689439028825" duration="696000" />
-      <workItem from="1689443453334" duration="34000" />
-      <workItem from="1689443557403" duration="20205000" />
-      <workItem from="1689564474522" duration="68000" />
-      <workItem from="1689564548003" duration="2520000" />
-      <workItem from="1689608459863" duration="792000" />
-      <workItem from="1689612188492" duration="6576000" />
-      <workItem from="1689701959550" duration="1354000" />
-      <workItem from="1689707957430" duration="14213000" />
+      <workItem from="1689354332825" duration="1813000" />
+      <workItem from="1689611546439" duration="36000" />
+      <workItem from="1689654554206" duration="10000" />
+      <workItem from="1689689900042" duration="20000" />
+      <workItem from="1689703807668" duration="7833000" />
+      <workItem from="1689728349781" duration="1355000" />
     </task>
     <servers />
   </component>
@@ -306,8 +282,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
