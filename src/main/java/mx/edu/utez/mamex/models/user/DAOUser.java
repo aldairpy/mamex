@@ -32,7 +32,7 @@ public class DAOUser implements DAORepository<User> {
             //se realiza la conexion a la base de datos
             conn = new MySQLConnection().connect();
             //se define la sentencia mysql
-            String query = "INSERT INTO users (names, lastnames, email, password) VALUES(?, ?, ?, ?);";
+            String query = "INSERT INTO users (name_user, lastname, email, password) VALUES(?, ?, ?, ?);";
             //se prepara la sentencia
             pstm = conn.prepareStatement(query);
             //establecemos el valor a los parametros de la sentencia
@@ -57,8 +57,8 @@ public class DAOUser implements DAORepository<User> {
     public boolean update(User object) {
         try{
             conn = new MySQLConnection().connect();
-            String query = "update users set names = ?, lastnames = ?, email = ?, birthday = ?, gender = ?" +
-                    ", img_user = ? where user_id = ?;";
+            String query = "update users set name_user = ?, lastname = ?, email = ?, birthday = ?, sex = ?" +
+                    ", photo = ? where user_id_user = ?;";
             pstm = conn.prepareStatement(query);
             pstm.setString(1, object.getNames());
             pstm.setString(2, object.getLastnames());

@@ -1,6 +1,7 @@
 package mx.edu.utez.mamex.controllers.user;
 
 import java.sql.Blob;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -49,39 +50,57 @@ public class ServletMAMEX extends HttpServlet {
         action = req.getServletPath();
         switch (action) {
             case "/user/mamex": //redirigir al inicio
+            {
                 redirect = "/index.jsp";
-                break;
+            }
+            break;
 
             case "/user/login": //una vez registrado te llevara a iniciar sesion
-                redirect = "/views/user/inicio_sesion.jsp";
-                break;
+            {
+                session = req.getSession(false);
+                if (session.getAttribute("email") != null) {
+                    session.setAttribute("email", email);
+                    redirect = "/views/user/profile.jsp";
+                } else {
+                    redirect = "/views/user/inicio_sesion.jsp";
+                }
+            }
+            break;
             case "/user/register-view": //una vez registrado te llevara a iniciar sesion
+            {
                 redirect = "/views/user/registro_usuarios.jsp";
-                break;
+            }
+            break;
 
-            case "/user/contacto":
+            case "/user/contacto": {
                 redirect = "/views/user/contacto.jsp";
-                break;
+            }
+            break;
 
-            case "/user/admin/dashboard":{
+            case "/user/admin/dashboard": {
                 redirect = "/views/admin/inicio.jsp";
-            }break;
+            }
+            break;
 
-            case "/user/admin/products":{
+            case "/user/admin/products": {
                 redirect = "/views/admin/products.jsp";
-            }break;
+            }
+            break;
 
-            case "/user/admin/create-products":{
+            case "/user/admin/create-products": {
                 redirect = "/views/admin/crear_producto.jsp";
-            }break;
+            }
+            break;
 
-            case "/user/go-to-pay":{
+            case "/user/go-to-pay": {
                 redirect = "/views/user/payment.jsp";
-            }break;
+            }
+            break;
 
-            case "/user/profile":{
+            case "/user/profile": {
                 redirect = "/views/user/profile.jsp";
-            }break;
+            }
+            break;
 
             default:
                 System.out.println(action);
@@ -129,13 +148,13 @@ public class ServletMAMEX extends HttpServlet {
                             session.setAttribute("email", email);
                             redirect = "/user/admin/dashboard?result=" + true
                                     + "&message" + URLEncoder.encode("Inicio de sesion correctamente administrador! :D" + user.getNames(), StandardCharsets.UTF_8);
-                        }else{
+                        } else {
                             session = req.getSession();
                             session.setAttribute("email", email);
                             redirect = "/user/mamex?result=" + true
                                     + "&message" + URLEncoder.encode("Inicio de sesion correctamente! :D" + user.getNames(), StandardCharsets.UTF_8);
                         }
-                    }else {
+                    } else {
                         redirect = "/user/mamex?result=" + false
                                 + "&message" + URLEncoder.encode("Usuario o contraseña incorrectos", StandardCharsets.UTF_8);
                     }
@@ -150,29 +169,33 @@ public class ServletMAMEX extends HttpServlet {
             }
             break;
 
-            case "/user/unlogin":{
+            case "/user/unlogin": {
                 try {
                     session = req.getSession();
                     session.invalidate();
                     redirect = "/user/mamex?result =" + true
-                            + "&message" + URLEncoder.encode("Sesion cerrada correctamente", StandardCharsets.UTF_8);;
-                }catch (Exception e){
+                            + "&message" + URLEncoder.encode("Sesion cerrada correctamente", StandardCharsets.UTF_8);
+                    ;
+                } catch (Exception e) {
                     System.out.println("Error: " + e.getMessage());
                     redirect = "/user/mamex?result=" + false
                             + "&message" + URLEncoder.encode("Credentials Missmatch", StandardCharsets.UTF_8);
                 }
-            }break;
+            }
+            break;
 
-            case "/user/add-to-cart":{
+            case "/user/add-to-cart": {
                 try {
                     id = req.getParameter("id_user");
                     id_product = Integer.parseInt(req.getParameter("id_product"));
                     quantity = Integer.parseInt(req.getParameter("quantity"));
                     cost = Integer.parseInt(req.getParameter("cost"));
-                }catch (Exception e){}
-            }break;
+                } catch (Exception e) {
+                }
+            }
+            break;
 
-            case "/user/update-profile":{
+            /*case "/user/update-profile":{
                 try {
                     names = req.getParameter("names");
                     lastnames = req.getParameter("lastnames");
@@ -189,7 +212,7 @@ public class ServletMAMEX extends HttpServlet {
                                 + "&message" + URLEncoder.encode("Error al actualizar el perfil", StandardCharsets.UTF_8);
                     }
                 }catch (Exception e){}
-            }break;
+            }break;*/
 
             default:
                 redirect = "/user/mamex";

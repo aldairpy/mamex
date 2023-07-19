@@ -42,10 +42,10 @@
                         <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="icon" data-feather="user"></i>
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
+                        <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-sm-start">
                             <li>
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Perfil
+                                <button type="button" class="btn">
+                                    <a href="/user/login" style="text-decoration: none; color: black">Mi perfil</a>
                                 </button>
                             </li>
                             <li><a class="dropdown-item" href="/user/register-view">Registrarse</a></li>
