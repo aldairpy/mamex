@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 <html>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -41,7 +43,7 @@
 <body>
 <jsp:include page="../../layouts/nav.jsp"/>
 
-<div class="container mt-3 ps-5">
+<div class="container mt-3 text-center">
     <h4>Mi cuenta</h4>
 </div>
 <div class="container mt-1">
@@ -56,13 +58,12 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h4 class="card-title">Nombre</h4>
-                        <small>Dirección</small>
+                        <h4 class="card-title"></h4>
                     </div>
                 </div>
                 <div class="container links">
                     <div class="row mb-3 m-5 text-center">
-                        <div class="col-sm-3 col-lg-3 mb-3">
+                        <div class="col-sm-3 col-lg-4 mb-3">
                             <a href="#" class="card card_custom">
                                 <div class="card-body">
                                     <img src="${pageContext.request.contextPath}/assets/svgs/package-box-svgrepo-com.svg"
@@ -73,34 +74,24 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-3 col-lg-3 mb-3">
+                        <div class="col-sm-3 col-lg-4 mb-3">
                             <a href="#" class="card card_custom">
                                 <div class="card-body">
                                     <img src="${pageContext.request.contextPath}/assets/svgs/unlock-filled-svgrepo-com.svg"
                                          alt="">
                                     <h6 class="card-title">Inicio de sesión y seguridad</h6>
-                                    <small class="card-text">Cambiar correo electrónico, contraseña y número
-                                        telefónico</small>
+                                    <small class="card-text">Correo electrónico y contraseña</small>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-3 col-lg-3 mb-3">
-                            <a href="#" class="card card_custom">
-                                <div class="card-body">
-                                    <img src="${pageContext.request.contextPath}/assets/svgs/placeholder-maps-and-location-svgrepo-com.svg"
-                                         alt="">
-                                    <h6 class="card-title">Direcciones</h6>
-                                    <small class="card-text">Editar direcciones para tus pedidos</small>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 col-lg-3 mb-3">
-                            <a href="#" class="card card_custom">
+
+                        <div class="col-sm-3 col-lg-4 mb-3">
+                            <a href="/user/Info" class="card card_custom">
                                 <div class="card-body">
                                     <img src="${pageContext.request.contextPath}/assets/svgs/user-information-svgrepo-com.svg"
                                          alt="">
                                     <h6 class="card-title">Información personal</h6>
-                                    <small class="card-text">La información que nos ayuda a saber más de ti</small>
+                                    <small class="card-text">Información sobre ti</small>
                                 </div>
                             </a>
                         </div>

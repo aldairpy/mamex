@@ -46,7 +46,7 @@
                         <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-sm-start">
                             <li>
                                 <button type="button" class="btn">
-                                    <a href="/user/MyProfile" style="text-decoration: none; color: black">Mi perfil</a>
+                                    <a href="/user/login" style="text-decoration: none; color: black">Mi perfil</a>
                                 </button>
                             </li>
                             <li><a class="dropdown-item" href="/user/register-view">Registrarse</a></li>

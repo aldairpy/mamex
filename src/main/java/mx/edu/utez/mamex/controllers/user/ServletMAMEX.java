@@ -27,7 +27,8 @@ import java.nio.charset.StandardCharsets;
         "/user/cart-view",
         "/user/go-to-pay",
         "/user/AboutUs",
-        "/user/MyProfile"
+        "/user/MyProfile",
+        "/user/Info"
 }) //endpoints para saber a donde redirigir al usuario
 public class ServletMAMEX extends HttpServlet {
     private String action;
@@ -74,6 +75,11 @@ public class ServletMAMEX extends HttpServlet {
                 redirect = "/views/user/profile.jsp";
             }
             break;
+            case "/user/Info": {
+                redirect = "/views/user/personal_info.jsp";
+            }
+            break;
+
             default:
                 System.out.println(action);
                 break;

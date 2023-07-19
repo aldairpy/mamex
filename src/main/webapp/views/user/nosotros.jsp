@@ -14,44 +14,12 @@
 <body>
     <jsp:include page="/layouts/nav.jsp"/>
     <main>
-        <section>
-            <div class="container-fluid p-5" style="background-color: #f0f1ee;">
-                <div class="container p-sm-5 p-lg-5">
-                    <section class="container">
-                        <div class="row">
-                            <article class="col-12 col-lg-7">
-                                <h2 class="display-4 mb-5 mt-lg-5">Descubre la belleza en cada hilo</h2>
-                                <p class="lead text-sm-start text-md-start"><em>Sumérgete en un mundo de
-                                    posibilidades con nuestra amplia
-                                    colección de tejidos de alta calidad
-                                    cuidadosamente seleccionados para que puedas crear prendas únicas y
-                                    proyectos creativos que reflejen tu estilo y pasión por la moda.</em></p>
-                                <a href="/user/register-view"
-                                   class="text-decoration-none text-dark link-animation"
-                                   style=" font-weight: 700; color:black">
-                                    <button class="btn btn-dark m-4"
-                                            style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;">
-                                        Regístrate
-                                    </button>
-                                </a>
-                            </article>
-                            <article class="col-lg-5 ps-lg-5 ps-sm-0">
-                                <img src="${pageContext.request.contextPath}/assets/img/e9be2a1f1471feb0c1b18083309ea295.jpg"
-                                     alt="img-hilos"
-                                     class="">
-                            </article>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </section>
-
 
         <section>
             <div class="container-fluid pb-5">
                 <div class="container mt-5">
-                    <h2 class="display-4 text-center">Explora nuestra gama de exquisitos tejidos</h2>
-                    <p class=" mt-4 text-center text-sm-center text-md-center m-4 fs-4"
+                    <h2 class="display-5 text-center">Explora nuestra gama de exquisitos tejidos</h2>
+                    <p class=" mt-4 text-center text-sm-center text-md-center m-4"
                     >Desde suaves algodones hasta lujosas
                         sedas y duraderos linos, encontrarás la calidad y variedad que necesitas para dar vida a tus ideas.
                         Descubre la esencia de la elegancia,
@@ -132,7 +100,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="container pt-5 mt-5 border">
+                        <div class="container pt-5 mt-5">
                             <div class="row justify-content-evenly">
                                 <div class="col-lg-4 col-md-6">
                                     <img class="img-fluid" src="${pageContext.request.contextPath}/assets/img/descarga.jfif" alt="img5">
@@ -171,56 +139,14 @@
                                             style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;">
                                         <a href="../../views/admin/inicio.jsp">Ver mas</a>
                                     </button>
-
+                                    <button class="btn btn-dark m-4"
+                                            style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;">
+                                        <a href="../../views/user/personal_info.jsp">Ver mas</a>
+                                    </button>
                                     </p>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container-fluid p-5" style="background-color: #f0f1ee;">
-                <div class="container">
-                    <h3 class="display-4 text-center">Los más populares de esta semana</h3>
-                    <p class="lead text-center fw-medium fs-5 mb-5">Dejate cautivar por los artículos que han sido tendencia
-                        esta
-                        semana</p>
-                </div>
-                <div class="container">
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                    class="active"
-                                    aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner" id="myCarousel">
-                            <div class="carousel-item active">
-                                <img src="${pageContext.request.contextPath}/assets/img/Rancho_Cucamonga_Tree_16.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="${pageContext.request.contextPath}/assets/img/FwBEgeVX0AAeJqf.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="${pageContext.request.contextPath}/assets/img/R.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>
