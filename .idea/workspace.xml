@@ -10,18 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/cart/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/cart/DAOCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/login/DAOLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/user/UserLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletAdmin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/ItemDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/orders/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/orders/OrderDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletMAMEX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletMAMEX.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/crud/DAORepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/crud/DAORepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/user/DAOUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/user/DAOUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/inicio.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/inicio.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/inicio_sesion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/inicio_sesion.jsp" afterDir="false" />
-
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,23 +55,21 @@
     </option>
   </component>
   <component name="ProjectId" id="2RDJi2Yb55gmQeH8cHyWFofaDlQ" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;aldairv2&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;maisol-v2&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/josue/Documents/Apps Web/Apps/Mike/secondapp&quot;,
-
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -99,7 +92,7 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/views/admin" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.mamex">
+  <component name="RunManager" selected="JavaScript Debug.crear_producto.jsp">
     <configuration name="DAOUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mx.edu.utez.mamex.models.user.DAOUser" />
       <module name="mamex" />
@@ -125,6 +118,9 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="crear_producto.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/views/admin/crear_producto.jsp">
+      <method v="2" />
     </configuration>
     <configuration name="mamex" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.10" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
@@ -219,10 +215,12 @@
     <list>
       <item itemvalue="Application.DAOUser" />
       <item itemvalue="Application.MySQLConnection" />
+      <item itemvalue="JavaScript Debug.crear_producto.jsp" />
       <item itemvalue="Tomcat Server.mamex" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.crear_producto.jsp" />
         <item itemvalue="Application.DAOUser" />
         <item itemvalue="Application.MySQLConnection" />
         <item itemvalue="Application.MySQLConnection" />
@@ -276,7 +274,7 @@
       <workItem from="1689110119908" duration="2118000" />
       <workItem from="1689276157639" duration="1543000" />
       <workItem from="1689283297318" duration="1694000" />
-
+      <workItem from="1689708342952" duration="10711000" />
     </task>
     <servers />
   </component>
