@@ -15,38 +15,29 @@
 <body>
 <jsp:include page="/layouts/nav.jsp"/>
 
-<main>
-    <section>
-        <div class="container-fluid p-5" style="background-color: #f0f1ee;">
-            <div class="container p-sm-5 p-lg-5">
-                <section class="container">
-                    <div class="row">
-                        <article class="col-12 col-lg-7">
-                            <h2 class="display-4 mb-5 mt-lg-5">Descubre la belleza en cada hilo</h2>
-                            <p class="lead text-sm-start text-md-start"><em>Sumérgete en un mundo de
-                                posibilidades con nuestra amplia
-                                colección de tejidos de alta calidad
-                                cuidadosamente seleccionados para que puedas crear prendas únicas y
-                                proyectos creativos que reflejen tu estilo y pasión por la moda.</em></p>
-                            <a href="/user/register-view"
-                               class="text-decoration-none text-dark link-animation"
-                               style=" font-weight: 700; color:black">
-                                <button class="btn btn-dark m-4"
-                                        style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;">
-                                    Regístrate
-                                </button>
-                            </a>
-                        </article>
-                        <article class="col-lg-5 ps-lg-5 ps-sm-0">
-                            <img src="${pageContext.request.contextPath}/assets/img/e9be2a1f1471feb0c1b18083309ea295.jpg"
-                                 alt="img-hilos"
-                                 class="">
-                        </article>
-                    </div>
-                </section>
-            </div>
+<div id="carouselExampleAutoplaying" class="carousel slide micarrusel " data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="${pageContext.request.contextPath}/assets/img/F1.jpg" class="d-block" alt="...">
         </div>
-    </section>
+        <div class="carousel-item">
+            <img src="${pageContext.request.contextPath}/assets/img/F2.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="${pageContext.request.contextPath}/assets/img/F3.jpg" class="d-block" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
 
     <section>
