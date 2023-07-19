@@ -154,3 +154,7 @@ img {
     display: block;
 }
 
+.card-header img {
+    border-radius: 50px;
+}
+

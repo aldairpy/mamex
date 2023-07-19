@@ -16,17 +16,14 @@
             font-family: 'Inter', sans-serif !important;
         }
     </style>
-    <link rel="icon" href="../../assets/img/OIP.jpg">
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../assets/css/styles.css">
-    <script src="https://unpkg.com/feather-icons"></script>
+    <jsp:include page="../../layouts/headAdmin.jsp"/>
     <title>Productos</title>
 </head>
 <body>
-<nav class="navbar sticky-top navbar-expand-lg bg-white">
+<nav class="navbar sticky-top navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand" href="./inicio.jsp">
-            <img src="../../assets/img/OIP.jpg" alt="Bootstrap" width="34" height="34" style="border-radius: 50px;">
+            <img src="${pageContext.request.contextPath}/assets/img/OIP.jpg" alt="Bootstrap" width="34" height="34" style="border-radius: 50px;">
         </a>
         <p class="pt-3 ms-5" style="font-size: 20px;">Producto</p>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -49,7 +46,7 @@
                     <input placeholder="Buscar" type="search" class="input">
                 </div>
             </div>
-            <img class="d-sm-none d-lg-block" src="../../assets/img/Rancho_Cucamonga_Tree_16.png" width="34" height="34"
+            <img class="d-sm-none d-lg-block" src="${pageContext.request.contextPath}/assets/img/Rancho_Cucamonga_Tree_16.png" width="34" height="34"
                  style="border-radius: 50px;">
             <p class="pt-3 ms-3 d-none d-lg-block">Administrador</p>
 
@@ -57,7 +54,7 @@
     </div>
 </nav>
 
-<div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive"
+<div class="offcanvas-lg offcanvas-start bg-white" tabindex="-1" id="offcanvasResponsive"
      aria-labelledby="offcanvasResponsiveLabel">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Menú</h5>
@@ -92,12 +89,14 @@
         <div class="card text-end">
             <div class="card-title pt-4 pe-3">
                 <a style="text-decoration: none; color:black" href="./crear_producto.jsp">
-                    <small>Agregar productos</small><button class="btn btn-success btn-sm btn-outline pt-2 ms-2"><i data-feather="plus"></i></button>
+                    <button class="btn btn-sm btn-outline-dark btn-custom"><i data-feather="plus"></i></button>
                 </a>
             </div>
-            <div class="card-body">
+            <div class="card-body text-start">
+                <h5>Productos</h5>
                 <div class="table-responsive">
                     <table class="table table-striped caption-top">
+                        <caption>Listado de productos disponibles</caption>
                         <thead>
                         <tr>
                             <th scope="col">ID</th>
@@ -119,9 +118,9 @@
                             <td>100</td>
                             <td>
                                 <a href="./editar_producto.jsp" style="text-decoration: none">
-                                    <button class="btn btn-primary btn-sm btn-outline"><i data-feather="edit"></i></button>
+                                    <button class="btn btn-sm btn-outline-primary">Editar</button>
                                 </a>
-                                <button class="btn btn-danger btn-sm btn-outline"><i data-feather="trash"></i></button>
+                                <button class="btn btn-sm btn-outline-danger">Eliminar</button>
                             </td>
 
                         </tr>
@@ -134,9 +133,9 @@
                             <td>200</td>
                             <td>
                                 <a href="./editar_producto.jsp" style="text-decoration: none">
-                                    <button class="btn btn-primary btn-sm btn-outline"><i data-feather="edit"></i></button>
+                                    <button class="btn btn-sm btn-outline"><i data-feather="edit"></i></button>
                                 </a>
-                                <button class="btn btn-danger btn-sm btn-outline"><i data-feather="trash"></i></button>
+                                <button class="btn btn-sm btn-outline"><i data-feather="trash"></i></button>
                             </td>
                         </tr>
                         </tbody>
@@ -150,10 +149,8 @@
     </div>
 </main>
 
-<script>
-    feather.replace();
-</script>
-<script src="../../assets/js/bootstrap.bundle.min.js"></script>
+<jsp:include page="../../layouts/footer.jsp"/>
+
 
 </body>
 </html>

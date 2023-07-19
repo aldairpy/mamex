@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <meta charset="UTF-8"/>
@@ -30,7 +31,7 @@
                     <li><a href="" class="nav-link">Categorias</a></li>
                     <li><a href="" class="nav-link">Novedades</a></li>
                     <li><a href="/user/contacto" class="nav-link">Contacto</a></li>
-                    <li><a href="" class="nav-link">Nosotros</a></li>
+                    <li><a href="/user/AboutUs" class="nav-link">Nosotros</a></li>
                 </ul>
             </div>
             <div class="container">
@@ -42,10 +43,10 @@
                         <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="icon" data-feather="user"></i>
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
+                        <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-sm-start">
                             <li>
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Perfil
+                                <button type="button" class="btn">
+                                    <a href="/user/login" style="text-decoration: none; color: black">Mi perfil</a>
                                 </button>
                             </li>
                             <li><a class="dropdown-item" href="/user/register-view">Registrarse</a></li>
@@ -61,23 +62,7 @@
     </div>
 </nav>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Mi perfil</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
 <jsp:include page="footer.jsp"/>
 </body>
 </html>

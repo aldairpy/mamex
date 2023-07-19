@@ -25,7 +25,10 @@ import java.nio.charset.StandardCharsets;
         "/user/contacto",
         "/user/add-to-cart",
         "/user/cart-view",
-        "/user/go-to-pay"
+        "/user/go-to-pay",
+        "/user/AboutUs",
+        "/user/MyProfile",
+        "/user/Info"
 }) //endpoints para saber a donde redirigir al usuario
 public class ServletMAMEX extends HttpServlet {
     private String action;
@@ -56,13 +59,26 @@ public class ServletMAMEX extends HttpServlet {
                 redirect = "/views/user/contacto.jsp";
                 break;
 
-            case "/user/admin/dashboard":{
+            case "/user/admin/dashboard": {
                 redirect = "/views/admin/inicio.jsp";
             }
-
-            case "/user/go-to-pay":{
+            break;
+            case "/user/go-to-pay": {
                 redirect = "/views/user/payment.jsp";
             }
+            break;
+            case "/user/AboutUs": {
+                redirect = "/views/user/nosotros.jsp";
+            }
+            break;
+            case "/user/MyProfile": {
+                redirect = "/views/user/profile.jsp";
+            }
+            break;
+            case "/user/Info": {
+                redirect = "/views/user/personal_info.jsp";
+            }
+            break;
 
             default:
                 System.out.println(action);
@@ -110,13 +126,13 @@ public class ServletMAMEX extends HttpServlet {
                             session.setAttribute("email", email);
                             redirect = "/user/admin/dashboard?result=" + true
                                     + "&message" + URLEncoder.encode("Inicio de sesion correctamente administrador! :D" + user.getNames(), StandardCharsets.UTF_8);
-                        }else{
+                        } else {
                             session = req.getSession();
                             session.setAttribute("email", email);
                             redirect = "/user/mamex?result=" + true
                                     + "&message" + URLEncoder.encode("Inicio de sesion correctamente! :D" + user.getNames(), StandardCharsets.UTF_8);
                         }
-                    }else {
+                    } else {
                         redirect = "/user/mamex?result=" + false
                                 + "&message" + URLEncoder.encode("Usuario o contraseña incorrectos", StandardCharsets.UTF_8);
                     }
@@ -131,27 +147,31 @@ public class ServletMAMEX extends HttpServlet {
             }
             break;
 
-            case "/user/unlogin":{
+            case "/user/unlogin": {
                 try {
                     session = req.getSession();
                     session.invalidate();
                     redirect = "/user/login?result =" + true
-                            + "&message" + URLEncoder.encode("Sesion cerrada correctamente", StandardCharsets.UTF_8);;
-                }catch (Exception e){
+                            + "&message" + URLEncoder.encode("Sesion cerrada correctamente", StandardCharsets.UTF_8);
+                    ;
+                } catch (Exception e) {
                     System.out.println("Error: " + e.getMessage());
                     redirect = "/user/mamex?result=" + false
                             + "&message" + URLEncoder.encode("Credentials Missmatch", StandardCharsets.UTF_8);
                 }
-            }break;
+            }
+            break;
 
-            case "/user/add-to-cart":{
+            case "/user/add-to-cart": {
                 try {
                     id_user = req.getParameter("id_user");
                     id_product = Integer.parseInt(req.getParameter("id_product"));
                     quantity = Integer.parseInt(req.getParameter("quantity"));
                     cost = Integer.parseInt(req.getParameter("cost"));
-                }catch (Exception e){}
-            }break;
+                } catch (Exception e) {
+                }
+            }
+            break;
 
             default:
                 redirect = "/user/mamex";
