@@ -31,14 +31,12 @@
     <div class="container position-absolute top-50 start-50 translate-middle w-50">
         <div class="container">
             <h6>Datos personales</h6>
-            <div class="card border-1 border-opacity-10">
+            <div class="card border-0 box-shadow-1">
                 <c:forEach var="user" items="${users}" varStatus="status">
                     <table class="table">
                         <tbody>
                         <tr>
-                            <td>
-                                <s:out value="${user.name_user}"/> <s:out value="${user.lastnames}"/>
-                            </td>
+                            <td><s:out value="${user.name_user}"/> <s:out value="${user.lastnames}"/></td>
                             <td><s:out value="${user.email}"/></td>
                             <td><s:out value="${user.sex}"/></td>
                             <td><s:out value="${user.birthday}"/></td>
