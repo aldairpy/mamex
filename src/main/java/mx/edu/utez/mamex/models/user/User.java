@@ -11,7 +11,8 @@ public class User {
     private String password;
     private String birthday;
     private String gender;
-    private Blob img_user;
+    private byte[] img_user;
+    private String fileName;
 
     public User() {
 
@@ -25,14 +26,13 @@ public class User {
         this.password = password;
     }
 
-    public User(long id, String names, String lastnames, String email, String birthday, String gender, Blob img_user) {
+    public User(long id, String names, String lastnames, String email, String birthday, String gender) {
         this.id = id;
         this.names = names;
         this.lastnames = lastnames;
         this.email = email;
         this.birthday = birthday;
         this.gender = gender;
-        this.img_user = img_user;
     }
 
     public Long getId() {
@@ -91,11 +91,19 @@ public class User {
         this.gender = gender;
     }
 
-    public Blob getImg_user(){
+    public byte[] getImg_user() {
         return img_user;
     }
 
-    public void setImg_user(Blob img_user) {
+    public void setImg_user(byte[] img_user) {
         this.img_user = img_user;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 }
