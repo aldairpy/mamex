@@ -16,5 +16,3 @@ public interface DAORepository<T> {
     boolean delete(Long id);
     boolean addToCart(T object);
 }
-
-//DAO, se definen los metodos para acceder a los datos
