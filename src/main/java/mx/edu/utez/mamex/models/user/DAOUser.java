@@ -9,30 +9,51 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class DAOUser implements DAORepository<User> {
+public class DAOUser{
     private Connection conn;
     private PreparedStatement pstm;
     private CallableStatement cs;
     private ResultSet rs;
 
 
-    @Override
+
     public List<User> findAll() {
         return null;
     }
 
-    @Override
-    public User findOne() {
-        return null;
+
+    public User findOne(Long id) {
+        User user = null;
+        try {
+            conn = new MySQLConnection().connect();
+            String query = "select * from users where id_user = ?";
+            pstm = conn.prepareStatement(query);
+            pstm.setLong(1, id);
+            rs = pstm.executeQuery();
+            while (rs.next()){
+                user = new User();
+                user.setId(rs.getLong("id_user"));
+                user.setNames(rs.getString("name_user"));
+                user.setLastnames(rs.getString("lastname"));
+                user.setEmail(rs.getString("email"));
+                user.setBirthday(rs.getString("birthday"));
+                user.setGender(rs.getString("gender"));
+                user.setImg_user(rs.getBytes("photo"));
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }finally {
+            close();
+        }
+        return user;
     }
 
-    @Override
     public boolean save(User object) {
         try {
             //se realiza la conexion a la base de datos
             conn = new MySQLConnection().connect();
             //se define la sentencia mysql
-            String query = "INSERT INTO users (names, lastnames, email, password) VALUES(?, ?, ?, ?);";
+            String query = "INSERT INTO users (name_user, lastname, email, password) VALUES(?, ?, ?, ?);";
             //se prepara la sentencia
             pstm = conn.prepareStatement(query);
             //establecemos el valor a los parametros de la sentencia
@@ -50,50 +71,66 @@ public class DAOUser implements DAORepository<User> {
         return false;
     } //metodo para registrar un nuevo usuario a mamex
 
-
-
-
-    @Override
-    public boolean update(User object) {
-        return false;
-    }
-
-    @Override
-    public boolean delete(Long id) {
-        return false;
-    }
-
-    @Override
-    public boolean addToCart(User object) {
-        return false;
-    }
-
     public boolean login(User object) {
         return false;
     }
 
-    public User prueba(String email, String password) {
-        try {
-            conn = new MySQLConnection().connect();
-            String query = "{call prueba(?)}";
-            cs = conn.prepareCall(query);
-            cs.setLong(1,1);
-            rs = cs.executeQuery();
-            while (rs.next()) {
-                System.out.println(rs.getString("email"));
-            }
 
+    public boolean update(User object) {
+        try{
+            conn = new MySQLConnection().connect();
+            String query = "update users set name_user = ?, lastname = ?, email = ?, birthday = ?, sex = ?" +
+                    ", photo = ? where user_id_user = ?;";
+            pstm = conn.prepareStatement(query);
+            pstm.setString(1, object.getNames());
+            pstm.setString(2, object.getLastnames());
+            pstm.setString(3, object.getEmail());
+            pstm.setString(4, object.getBirthday());
+            pstm.setString(5, object.getGender());
+            pstm.setBytes(6, object.getImg_user());
+            pstm.setLong(7, object.getId());
+            return pstm.executeUpdate() > 0;
+        }catch (SQLException e){
+            Logger.getLogger(DAOUser.class.getName()).log(Level.SEVERE, "Error update" + e.getMessage());
+        }
+        return false;
+    }
+
+    public boolean delete(Long id) {
+        return false;
+    }
+
+    public boolean addToCart(User object) {
+        return false;
+    }
+
+    public User login(String email, String password){
+        try{
+            conn = new MySQLConnection().connect();
+            String query = "select * from users where email = ? and password = ?;";
+            pstm = conn.prepareStatement(query);
+            pstm.setString(1, email);
+            pstm.setString(2, password);
+            rs = pstm.executeQuery();
+            if(rs.next()){
+                User user = new User();
+                user.setId(rs.getLong("id_user"));
+                user.setEmail(rs.getString("email"));
+                user.setNames(rs.getString("names"));
+                user.setLastnames(rs.getString("lastnames"));
+                user.setBirthday(rs.getString("birthday"));
+                user.setGender(rs.getString("gender"));
+                user.getImg_user();
+                return user;
+            }
         } catch (SQLException e) {
-            Logger.getLogger(DAOUser.class.getName()).log(Level.SEVERE, "Credentials Missmatch" + e.getMessage());
-        }finally {
+            Logger.getLogger(DAOUser.class.getName())
+                    .log(Level.SEVERE,
+                            "Credentials mismatch: " + e.getMessage());
+        } finally {
             close();
         }
         return null;
-    }
-
-    public static void main(String[] args) {
-        DAOUser dao = new DAOUser();
-        dao.prueba("","");
     }
 
 
