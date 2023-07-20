@@ -5,7 +5,7 @@ import java.util.List;
 public interface DAORepository<T> {
     List<T> findAll();
 
-    T findOne();
+    T findOne(Long id);
 
     boolean save(T object);
 
@@ -16,5 +16,3 @@ public interface DAORepository<T> {
     boolean delete(Long id);
     boolean addToCart(T object);
 }
-
-//DAO, se definen los metodos para acceder a los datos

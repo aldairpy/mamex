@@ -10,23 +10,20 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class DAOLogin implements DAORepository<UserLogin> {
+public class DAOLogin{
 
     private Connection conn;
     private PreparedStatement pstm;
     private CallableStatement cs;
     private ResultSet rs;
-    @Override
     public List<UserLogin> findAll() {
         return null;
     }
 
-    @Override
     public UserLogin findOne() {
         return null;
     }
 
-    @Override
     public boolean save(UserLogin object) {
         try {
             conn = new MySQLConnection().connect();
@@ -50,22 +47,19 @@ public class DAOLogin implements DAORepository<UserLogin> {
         return false;
     }
 
-    @Override
     public boolean login(UserLogin object) {
         return false;
     }
 
-    @Override
     public boolean update(UserLogin object) {
         return false;
     }
 
-    @Override
+
     public boolean delete(Long id) {
         return false;
     }
 
-    @Override
     public boolean addToCart(UserLogin object) {
         return false;
     }
