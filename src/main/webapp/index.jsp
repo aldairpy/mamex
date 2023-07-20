@@ -7,93 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <jsp:include page="layouts/head.jsp"/>
-    <link rel="icon" href="./assets/img/OIP.jpg">
+    <link rel="icon" href="${pageContext.request.contextPath}/assets/img/OIP.jpg">
     <title>Manos Mexicanas</title>
 
 </head>
 
 <body>
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand ms-lg-5" href="${pageContext.request.contextPath}/index.jsp"><img
-                src="${pageContext.request.contextPath}/assets/img/OIP.jpg" alt="logo"/></a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse text-center navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <ul class="mt-lg-3 d-lg-flex justify-content-lg-center justify-content-center list-unstyled">
-                    <li><a href="./user/mamex" class="nav-link">Inicio</a></li>
+<jsp:include page="/layouts/nav.jsp"/>
 
-                    <li><a href="" class="nav-link">Categorias</a></li>
-                    <li><a href="" class="nav-link">Novedades</a></li>
-                    <li><a href="./user/contacto" class="nav-link">Contacto</a></li>
-
-                    <li><a href="" class="nav-link">Nosotros</a></li>
-                </ul>
-            </div>
-            <div class="container">
-                <div class="container d-flex justify-content-lg-end justify-content-center justify-content-md-center">
-                    <button class="icon-button m-2">
-                        <i class="icon" data-feather="search"></i>
-                    </button>
-                    <div class="dropdown">
-                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="icon" data-feather="user"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li>
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Perfil
-                                </button>
-                            </li>
-                            <li><a class="dropdown-item" href="./views/user/registro_usuarios.jsp">Registrarse</a></li>
-                        </ul>
-                    </div>
-                    <button class="icon-button m-2">
-                        <i class="icon" data-feather="shopping-cart"></i>
-                    </button>
-                </div>
-            </div>
-
+<div id="carouselExampleAutoplaying" class="carousel slide micarrusel " data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="${pageContext.request.contextPath}/assets/img/F1.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="${pageContext.request.contextPath}/assets/img/F2.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="${pageContext.request.contextPath}/assets/img/F3.jpg" class="d-block" alt="...">
         </div>
     </div>
-</nav>
-
-<main>
-    <section>
-        <div class="container-fluid p-5" style="background-color: #f0f1ee;">
-            <div class="container p-sm-5 p-lg-5">
-                <section class="container">
-                    <div class="row">
-                        <article class="col-12 col-lg-7">
-                            <h2 class="display-4 mb-5 mt-lg-5">Descubre la belleza en cada hilo</h2>
-                            <p class="lead text-sm-start text-md-start"><em>Sumérgete en un mundo de
-                                posibilidades con nuestra amplia
-                                colección de tejidos de alta calidad
-                                cuidadosamente seleccionados para que puedas crear prendas únicas y
-                                proyectos creativos que reflejen tu estilo y pasión por la moda.</em></p>
-                            <a href="./views/user/registro_usuarios.jsp"
-                               class="text-decoration-none text-dark link-animation"
-                               style=" font-weight: 700; color:black">
-                                <button class="btn btn-dark m-4"
-                                        style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;">
-                                    Regístrate
-                                </button>
-                            </a>
-                        </article>
-                        <article class="col-lg-5 ps-lg-5 ps-sm-0">
-                            <img src="${pageContext.request.contextPath}/assets/img/e9be2a1f1471feb0c1b18083309ea295.jpg"
-                                 alt="img-hilos"
-                                 class="">
-                        </article>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </section>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
 
     <section>
@@ -184,10 +128,10 @@
                     <div class="container pt-5 mt-5 border">
                         <div class="row justify-content-evenly">
                             <div class="col-lg-4 col-md-6">
-                                <img class="img-fluid" src="./assets/img/descarga.jfif" alt="img5">
+                                <img class="img-fluid" src="${pageContext.request.contextPath}/assets/img/descarga.jfif" alt="img5">
                             </div>
                             <div class="col-lg-4 col-md-6">
-                                <img class="img-fluid" src="./assets/img/copia.jfif" alt="img6">
+                                <img class="img-fluid" src="${pageContext.request.contextPath}/assets/img/copia.jfif" alt="img6">
                             </div>
                             <div class="col-12 col-lg-4 ps-5 mt-5">
                                 <p class="fs-lg-5">¡Bienvenido a Manos Mexicanas! Aquí encontrarás mucho más que simples
@@ -218,7 +162,7 @@
                                 </ul>
                                 <button class="btn btn-dark m-4"
                                         style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;">
-                                    <a href="./views/admin/inicio.jsp">Ver mas</a>
+                                    <a href="">Ver mas</a>
                                 </button>
 
                                 </p>
@@ -251,13 +195,13 @@
                     </div>
                     <div class="carousel-inner" id="myCarousel">
                         <div class="carousel-item active">
-                            <img src="./assets/img/Rancho_Cucamonga_Tree_16.png" class="d-block w-100" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/Rancho_Cucamonga_Tree_16.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/img/FwBEgeVX0AAeJqf.jpg" class="d-block w-100" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/FwBEgeVX0AAeJqf.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/img/R.jpg" class="d-block w-100" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/R.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -299,24 +243,9 @@
     </p>
 </footer>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Mi perfil</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
 
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
 <jsp:include page="layouts/footer.jsp"/>
 </body>
 </html>

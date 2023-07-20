@@ -9,14 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletAdmin.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/Item.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/ItemDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/orders/Order.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/orders/OrderDao.java" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/crud/DAORepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/crud/DAORepository.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +35,8 @@
       </list>
     </option>
   </component>
+
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -55,6 +54,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2RDJi2Yb55gmQeH8cHyWFofaDlQ" />
+
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -126,6 +126,7 @@
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="mamex:war exploded">
@@ -135,7 +136,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="be4ead1c-e550-4dce-98f3-f3a73d400b35" />
+        <option name="BASE_DIRECTORY_NAME" value="30fe355c-2af0-4795-9b48-00b7041f198c" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -143,7 +144,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="65394" />
+        <option name="DEBUG_PORT" value="61228" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -227,12 +228,13 @@
         <item itemvalue="Application.MySQLConnection" />
       </list>
     </recent_temporary>
+
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="" />
-      <created>1686778844482</created>
+      <changelist id="6c213d6c-0457-4a9d-8698-fdef60cf7820" name="Changes" comment="" />
+      <created>1689865827685</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686778844482</updated>
@@ -275,21 +277,11 @@
       <workItem from="1689276157639" duration="1543000" />
       <workItem from="1689283297318" duration="1694000" />
       <workItem from="1689708342952" duration="10711000" />
+
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
