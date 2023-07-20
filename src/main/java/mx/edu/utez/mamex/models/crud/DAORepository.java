@@ -5,7 +5,7 @@ import java.util.List;
 public interface DAORepository<T> {
     List<T> findAll();
 
-    T findOne();
+    T findOne(Long id);
 
     boolean save(T object);
 
