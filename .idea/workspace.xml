@@ -11,14 +11,9 @@
   <component name="ChangeListManager">
 
     <list default="true" id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/ItemDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/orders/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/orders/OrderDao.java" afterDir="false" />
-
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/layouts/sidebar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/crud/DAORepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/crud/DAORepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/inicio.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/inicio.jsp" afterDir="false" />
 
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,10 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="crear_producto.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/views/admin/crear_producto.jsp">
-      <method v="2" />
-    </configuration>
-    <configuration name="mamex" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.10" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="mamex" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.10" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="corretto-11">
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -276,7 +268,21 @@
       <workItem from="1689110119908" duration="2118000" />
       <workItem from="1689276157639" duration="1543000" />
       <workItem from="1689283297318" duration="1694000" />
-      <workItem from="1689708342952" duration="10711000" />
+      <workItem from="1689354332825" duration="2621000" />
+      <workItem from="1689370886209" duration="5376000" />
+      <workItem from="1689439028825" duration="696000" />
+      <workItem from="1689443453334" duration="34000" />
+      <workItem from="1689443557403" duration="20205000" />
+      <workItem from="1689564474522" duration="68000" />
+      <workItem from="1689564548003" duration="2520000" />
+      <workItem from="1689608459863" duration="792000" />
+      <workItem from="1689612188492" duration="6576000" />
+      <workItem from="1689701959550" duration="1354000" />
+      <workItem from="1689707957430" duration="16401000" />
+      <workItem from="1689782677468" duration="3110000" />
+      <workItem from="1689801234882" duration="728000" />
+      <workItem from="1689802200023" duration="256000" />
+      <workItem from="1689864382262" duration="2984000" />
 
     </task>
     <servers />
