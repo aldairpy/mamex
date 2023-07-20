@@ -30,9 +30,10 @@ import java.nio.charset.StandardCharsets;
         "/user/go-to-pay",
         "/user/admin/products",
         "/user/admin/create-products",
-        "/user/unlogin",
+        "/user/logout",
         "/user/profile",
-        "/user/update-profile"
+        "/user/update-profile",
+        "/user/AboutUs"
 }) //endpoints para saber a donde redirigir al usuario
 public class ServletMAMEX extends HttpServlet {
     private String action;
@@ -102,6 +103,10 @@ public class ServletMAMEX extends HttpServlet {
             }
             break;
 
+            case "/user/AboutUs":{
+                redirect = "/views/user/nosotros.jsp";
+            }break;
+
             default:
                 System.out.println(action);
                 break;
@@ -169,7 +174,7 @@ public class ServletMAMEX extends HttpServlet {
             }
             break;
 
-            case "/user/unlogin": {
+            case "/user/logout": {
                 try {
                     session = req.getSession();
                     session.invalidate();
