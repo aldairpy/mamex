@@ -137,7 +137,7 @@
         <div class="card border-0 mt-5">
             <div class="container d-flex gap-3">
                 <h5 class="card-title">Ofertas</h5>
-                <small class="pt-1"><a href="">Ver todas</a></small>
+                <small class="pt-1"><a href="">Ver todas las ofertas </a></small>
             </div>
 
             <div class="card-body">
