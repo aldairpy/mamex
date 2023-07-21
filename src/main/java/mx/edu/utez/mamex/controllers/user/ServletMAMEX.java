@@ -248,6 +248,14 @@ public class ServletMAMEX extends HttpServlet {
             }
             break;
 
+            case "/user/go-to-pay":{
+                try {
+                    //traer el carrito de compras con los productos para despues mandar un correo electronico con los productos
+                    //el costo total y la informacion de pago.
+                }catch (Exception e){
+                }
+            }break;
+
             default: {
                 redirect = "/user/mamex";
             }

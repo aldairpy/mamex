@@ -21,7 +21,7 @@ import mx.edu.utez.mamex.utils.MySQLConnection;
 
 
 
-@WebServlet(name = "admin", urlPatterns = {"/admin/mamex", "/admin/gestionar_usuarios", "/admin/gestionar_productos", "/admin/gestionar_pedidos"})
+/*@WebServlet(name = "admin", urlPatterns = {"/admin/mamex", "/admin/gestionar_usuarios", "/admin/gestionar_productos", "/admin/gestionar_pedidos"})
 public class ServletAdmin extends HttpServlet {
 
     @Override
@@ -209,7 +209,7 @@ public class ServletAdmin extends HttpServlet {
                 break;
         }
     }
-}
+}*/
 
 
 
