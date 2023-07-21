@@ -36,7 +36,7 @@
                     <table class="table">
                         <tbody>
                         <tr>
-                            <td><s:out value="${user.name_user}"/> <s:out value="${user.lastnames}"/></td>
+                            <td><s:out value="${user.name_user}"/> <s:out value="${user.lastname}"/></td>
                             <td><s:out value="${user.email}"/></td>
                             <td><s:out value="${user.sex}"/></td>
                             <td><s:out value="${user.birthday}"/></td>
