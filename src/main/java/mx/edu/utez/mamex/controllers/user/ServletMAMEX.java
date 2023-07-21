@@ -33,7 +33,7 @@ import java.util.UUID;
         "/user/logout",
         "/user/profile",
         "/user/update-profile",
-        "/user/AboutUs"
+        "/user/AboutUs",
 }) //endpoints para saber a donde redirigir al usuario
 public class ServletMAMEX extends HttpServlet {
     private String action;
@@ -64,7 +64,7 @@ public class ServletMAMEX extends HttpServlet {
                 session = req.getSession(false);
                 if (session.getAttribute("email") != null) {
                     session.setAttribute("email", email);
-                    redirect = "/views/user/profile.jsp";
+                    redirect = "/user/profile";
                 } else {
                     redirect = "/views/user/inicio_sesion.jsp";
                 }
@@ -168,7 +168,7 @@ public class ServletMAMEX extends HttpServlet {
                     password = req.getParameter("password");
                     User user = new DAOUser().login(email, password);
                     if (user != null) {
-                        if (user.getEmail().equals("adminmamex@gmail.com") && user.getPassword().equals("admin")) {
+                        if (user.getEmail().equals("adminmamex@gmail.com") && user.getPassword().equals("admin1234")) {
                             session = req.getSession();
                             session.setAttribute("email", email);
                             redirect = "/user/admin/dashboard?result=" + true
@@ -186,6 +186,8 @@ public class ServletMAMEX extends HttpServlet {
 
                 } catch (Exception e) {
                     System.out.println("Error: " + e.getMessage());
+                    System.out.println(email +" "+ password);
+                    System.out.println(e);
                     redirect = "/user/mamex?result=" + false
                             + "&message" + URLEncoder.encode("Credentials Missmatch", StandardCharsets.UTF_8);
                 } finally {

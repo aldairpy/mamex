@@ -45,9 +45,11 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-sm-start">
                             <li>
-                                <button type="button" class="btn">
-                                    <a href="/user/login" style="text-decoration: none; color: black">Mi perfil</a>
-                                </button>
+                                <form id="redirect-form" novalidate action="/user/login" method="get"></form>
+                                    <button type="button" class="btn">
+                                        <a href="/user/login" style="text-decoration: none; color: black">Mi perfil</a>
+                                    </button>
+
                             </li>
                             <li><a class="dropdown-item" href="/user/register-view">Registrarse</a></li>
                         </ul>
