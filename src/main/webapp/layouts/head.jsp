@@ -17,8 +17,16 @@
         border: none;
         color: inherit;
         cursor: pointer;
-
     }
+    .micarrusel{
+        height: 500px !important;
+    }
+    .carousel-item{
+        width: 100% !important;
+        height: 500px !important;
+    }
+
+
 </style>
 
 
