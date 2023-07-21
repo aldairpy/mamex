@@ -24,7 +24,7 @@ import mx.edu.utez.mamex.utils.MySQLConnection;
 @WebServlet(name = "admin", urlPatterns = {"/admin/mamex", "/admin/gestionar_usuarios", "/admin/gestionar_productos", "/admin/gestionar_pedidos"})
 public class ServletAdmin extends HttpServlet {
 
-    @Override
+    /*@Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getServletPath();
 
@@ -208,7 +208,7 @@ public class ServletAdmin extends HttpServlet {
                 response.sendRedirect(request.getContextPath() + "/admin/gestionar_pedidos");
                 break;
         }
-    }
+    }*/
 }
 
 
