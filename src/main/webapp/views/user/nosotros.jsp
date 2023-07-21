@@ -16,7 +16,6 @@
 <body>
     <jsp:include page="/layouts/nav.jsp"/>
     <main>
-
         <section>
             <div class="container-fluid pb-5">
                 <div class="container mt-5">

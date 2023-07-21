@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
  <jsp:include page="../../layouts/sidebar.jsp"/>
     <main>
         <div class="container-main bg-body-light">
