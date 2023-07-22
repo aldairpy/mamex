@@ -13,6 +13,7 @@ public class User {
     private String gender;
     private byte[] img_user;
     private String fileName;
+    private int rol;
 
     public User() {
 
@@ -26,13 +27,14 @@ public class User {
         this.password = password;
     }
 
-    public User(long id, String names, String lastnames, String email, String birthday, String gender) {
+    public User(long id, String names, String lastnames, String email, String birthday, String gender, int rol) {
         this.id = id;
         this.names = names;
         this.lastnames = lastnames;
         this.email = email;
         this.birthday = birthday;
         this.gender = gender;
+        this.rol = rol;
     }
 
     public Long getId() {
@@ -105,5 +107,13 @@ public class User {
 
     public void setFileName(String fileName) {
         this.fileName = fileName;
+    }
+
+    public int getRol() {
+        return rol;
+    }
+
+    public void setRol(int rol) {
+        this.rol = rol;
     }
 }

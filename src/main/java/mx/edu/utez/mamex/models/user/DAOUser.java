@@ -115,11 +115,12 @@ public class DAOUser{
             if(rs.next()){
                 User user = new User();
                 user.setId(rs.getLong("id_user"));
+                user.setRol(rs.getInt("rol"));
                 user.setEmail(rs.getString("email"));
-                user.setNames(rs.getString("names"));
-                user.setLastnames(rs.getString("lastnames"));
+                user.setNames(rs.getString("name_user"));
+                user.setLastnames(rs.getString("lastname"));
                 user.setBirthday(rs.getString("birthday"));
-                user.setGender(rs.getString("gender"));
+                user.setGender(rs.getString("sex"));
                 user.getImg_user();
                 return user;
             }
