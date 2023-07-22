@@ -168,7 +168,7 @@ public class ServletMAMEX extends HttpServlet {
                     password = req.getParameter("password");
                     User user = new DAOUser().login(email, password);
                     if (user != null) {
-                        if (user.getEmail().equals("adminmamex@gmail.com") && user.getPassword().equals("admin1234")) {
+                        if (user.getRol() == 1) {
                             session = req.getSession();
                             session.setAttribute("email", email);
                             redirect = "/user/admin/dashboard?result=" + true
