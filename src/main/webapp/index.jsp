@@ -17,13 +17,13 @@
     <div id="carouselExampleAutoplaying" class="carousel slide micarrusel w-100" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="${pageContext.request.contextPath}/assets/img/F1.jpg" class="d-block" alt="...">
+                <img src="${pageContext.request.contextPath}/assets/img/F1.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="${pageContext.request.contextPath}/assets/img/F2.jpg" class="d-block" alt="...">
+                <img src="${pageContext.request.contextPath}/assets/img/F2.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="${pageContext.request.contextPath}/assets/img/F3.jpg" class="d-block" alt="...">
+                <img src="${pageContext.request.contextPath}/assets/img/F3.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
