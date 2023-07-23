@@ -23,15 +23,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Jsp File" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -47,14 +38,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="2RDJi2Yb55gmQeH8cHyWFofaDlQ" />
+  <component name="ProjectId" id="2StYVUz8GVtLOANhDNGFkpldMUU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -141,6 +125,7 @@
     </configuration>
     <configuration name="mamex" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.10" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="corretto-11">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="mamex:war exploded">
@@ -150,7 +135,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="30fe355c-2af0-4795-9b48-00b7041f198c" />
+        <option name="BASE_DIRECTORY_NAME" value="1283e4ed-20d0-4235-a629-b0cb420db81b" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -158,7 +143,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="61228" />
+        <option name="DEBUG_PORT" value="50160" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -244,12 +229,13 @@
         <item itemvalue="Application.DAOUser" />
       </list>
     </recent_temporary>
+
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="" />
-      <created>1689865827685</created>
+      <changelist id="fd10b29a-b2a3-4e32-8212-266ef3c17704" name="Changes" comment="" />
+      <created>1689967367671</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686778844482</updated>
@@ -310,6 +296,7 @@
       <workItem from="1689950273642" duration="2959000" />
       <workItem from="1689957488371" duration="831000" />
       <workItem from="1689959553346" duration="18495000" />
+
     </task>
     <servers />
   </component>

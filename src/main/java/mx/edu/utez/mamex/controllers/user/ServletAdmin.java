@@ -17,6 +17,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @WebServlet(name = "admin", urlPatterns = {"/admin/inicio", "/admin/crear_producto", "/admin/products"})
+
 public class ServletAdmin extends HttpServlet {
 
     @Override
@@ -102,6 +103,32 @@ public class ServletAdmin extends HttpServlet {
 
 
 
+
+        switch (action) {
+            case "updateStatus":
+                String newStatus = request.getParameter("status");
+                order.setState(newStatus);
+                try {
+                    orderDao.updateOrderState(orderId, newStatus);
+                    response.sendRedirect(request.getContextPath() + "/admin/gestionar_pedidos?result=success");
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                    response.sendRedirect(request.getContextPath() + "/admin/gestionar_pedidos?result=error");
+                }
+                break;
+            case "delete":
+                boolean deleteResult = orderDao.deleteOrder(orderId);
+                if (deleteResult) {
+                    response.sendRedirect(request.getContextPath() + "/admin/gestionar_pedidos?result=success");
+                } else {
+                    response.sendRedirect(request.getContextPath() + "/admin/gestionar_pedidos?result=error");
+                }
+                break;
+            default:
+                response.sendRedirect(request.getContextPath() + "/admin/gestionar_pedidos");
+                break;
+        }
+    }
 
 
 
