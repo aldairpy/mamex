@@ -34,6 +34,7 @@ import java.util.UUID;
         "/user/profile",
         "/user/update-profile",
         "/user/AboutUs",
+        "/user/personal-info"
 }) //endpoints para saber a donde redirigir al usuario
 public class ServletMAMEX extends HttpServlet {
     private String action;
@@ -70,6 +71,12 @@ public class ServletMAMEX extends HttpServlet {
                 }
             }
             break;
+
+            case "/user/personal-info":{
+                id = req.getParameter("user_id");
+                req.setAttribute("user", new DAOUser().findOne(id != null ? Long.parseLong(id) : 0L));
+                redirect = "/views/user/personal_info.jsp";
+            }break;
 
             case "/user/logout": {
                 try {
