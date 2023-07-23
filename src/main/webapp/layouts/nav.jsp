@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
     <meta charset="UTF-8"/>
@@ -45,11 +45,9 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-sm-start">
                             <li>
-                                <form action="">
-                                    <button type="button" class="btn">
-                                        <a href="${pageContext.request.contextPath}/user/profile" style="text-decoration: none; color: black">Mi perfil</a>
-                                    </button>
-                                </form>
+                                <button type="button" class="btn">
+                                    <a href="/user/login" style="text-decoration: none; color: black">Mi perfil</a>
+                                </button>
                             </li>
                             <li><a class="dropdown-item" href="/user/register-view">Registrarse</a></li>
                         </ul>
