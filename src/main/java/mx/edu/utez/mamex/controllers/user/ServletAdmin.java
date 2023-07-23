@@ -34,7 +34,7 @@ public class ServletAdmin extends HttpServlet {
                 response.sendRedirect(request.getContextPath() + "/crear_producto.jsp");
                 break;
             case "products":
-                loadProductsData(request, response);
+                response.sendRedirect(request.getContextPath() + "/views/admin/products.jsp");
                 break;
             default:
                 loadInicioData(request, response);
