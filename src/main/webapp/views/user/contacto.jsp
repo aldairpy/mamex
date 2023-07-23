@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,34 +42,32 @@
                     </svg>
                     <h5>UBICACIÓN</h5>
                     <small>Ciudad de México, CDMX</small>
-                </aside>
-                <a href="mailto:manosmexicanas@gmail.com" class="links">
-                    <aside class="contact-card box-shadow-1" id="link">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44"
-                             height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8c291" fill="none"
-                             stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                            <path d="M3 7l9 6l9 -6" />
-                        </svg>
-                        <h5>EMAIL</h5>
-                        <small>manos_mexicanas@gmail.com</small>
-                    </aside>
-                </a>
-                <a href="tel:777-549-9809" class="links">
-                    <aside class="contact-card box-shadow-1" id="link">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="44"
-                             height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8c291" fill="none"
-                             stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path
-                                    d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                        </svg>
-                        <h5>TELÉFONO</h5>
-                        <small>777-549-9809</small>
-                    </aside>
-                </a>
 
+                </aside>
+
+                <aside class="contact-card box-shadow-1" id="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44"
+                         height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8c291" fill="none"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                        <path d="M3 7l9 6l9 -6" />
+                    </svg>
+                    <h5>EMAIL</h5>
+                    <small><a href="mailto:manos_mexicanas@gmail.com">manos_mexicanas@gmail.com</a></small>
+                </aside>
+
+                <aside class="contact-card box-shadow-1" id="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="44"
+                         height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8c291" fill="none"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path
+                                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                    </svg>
+                    <h5>TELÉFONO</h5>
+                    <small><a href="tel:777-549-9809">777-549-9809</a></small>
+                </aside>
 
                 <aside class="contact-card box-shadow-1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="44"

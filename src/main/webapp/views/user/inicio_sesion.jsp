@@ -1,12 +1,12 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <jsp:include page="../../layouts/head.jsp"/>
     <title>Manos Mexicanas</title>
 </head>
@@ -28,22 +28,18 @@
                         <input class="form-control" type="email" id="email" name="email" placeholder="E-mail" required>
                     </div>
                     <div class="m-4">
-                        <input class="form-control" type="password" id="password" name="password"
-                               placeholder="Contraseña" required>
+                        <input class="form-control" type="password" id="password" name="password" placeholder="Contraseña" required>
                     </div>
-                    <a class="text-decoration-none text-dark link-animation">
-                        <button type="submit" class="btn btn-dark m-4"
-                                style="font-weight: 500; border-radius: 0px; padding: 10px; width: 150px;">Iniciar
-                            sesión
-                        </button>
+                    <a class="text-decoration-none text-dark link-animation"><button type="submit" class="btn btn-dark m-4"
+                                                                                     style="font-weight: 500; border-radius: 0px; padding: 10px; width: 150px;">Iniciar
+                        sesión</button>
                     </a>
                 </form>
                 <div class="container">
                     <div class="col-12 text-center mt-5">
                         <p class="text-center">¿No tienes una cuenta? <a href="/user/register-view"
                                                                          class="text-decoration-none text-dark link-animation"
-                                                                         style=" font-weight: 700; color:black">Regístrate</a>
-                        </p>
+                                                                         style=" font-weight: 700; color:black">Regístrate</a></p>
                         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#resetPassword">
                             Olvidé mi contraseña
                         </button>
@@ -85,9 +81,7 @@
                                                    placeholder="Correo electrónico" required>
                                         </div>
                                         <button class="btn btn-dark m-5 m-lg-4"
-                                                style="font-weight: 500; border-radius: 50px; padding: 10px; width: 100px;">
-                                            Enviar
-                                        </button>
+                                                style="font-weight: 500; border-radius: 50px; padding: 10px; width: 100px;">Enviar</button>
                                     </div>
                                     <div class="modal-footer">
                                         <div>
@@ -106,7 +100,7 @@
             </div>
         </div>
         <div class="col-lg-5 p-0 d-lg-block d-none">
-            <img class="w-100 vh-100" src="${pageContext.request.contextPath}/assets/img/image 28.png">
+            <img class="w-100 vh-100"  src="${pageContext.request.contextPath}/assets/img/image 28.png">
         </div>
     </div>
 </div>
