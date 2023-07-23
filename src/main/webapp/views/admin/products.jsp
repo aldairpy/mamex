@@ -6,22 +6,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
-        body {
-            font-family: 'Inter', sans-serif !important;
-        }
-    </style>
-    <link rel="icon" href="../../assets/img/OIP.jpg">
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../assets/css/styles.css">
-    <script src="https://unpkg.com/feather-icons"></script>
+    <jsp:include page="../../layouts/headAdmin.jsp"/>
     <title>Productos</title>
 </head>
 <body>
@@ -152,10 +144,7 @@
     </div>
 </main>
 
-<script>
-    feather.replace();
-</script>
-<script src="../../assets/js/bootstrap.bundle.min.js"></script>
+<jsp:include page="../../layouts/footer.jsp"/>
 
 </body>
 </html>
