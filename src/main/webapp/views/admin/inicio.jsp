@@ -19,43 +19,47 @@
 
 <body>
 
- <jsp:include page="../../layouts/sidebar.jsp"/>
-    <main>
-        <div class="container-main bg-body-light">
-            <div class="container">
-                <div class="cards d-grid justify-content-between">
-                    <div class="card-box">
-                        <div class="container">
-                            <div class="circle ms-2 mt-3"><i data-feather="users"></i></div>
-                        </div>
-                        <div class="container d-flex flex-column">
-                            <span style="font-size: 14px;">Usuarios</span>
-                            <span class="fw-bolder fs-4">45</span>
-                        </div>
+<jsp:include page="../../layouts/sidebar.jsp"/>
+<main>
+    <div class="container-main bg-body-light">
+        <div class="container">
+            <div class="cards d-grid justify-content-between">
+                <div class="card-box">
+                    <div class="container">
+                        <div class="circle ms-2 mt-3"><i data-feather="users"></i></div>
                     </div>
-                    <div class="card-box">
-                        <div class="container">
-                            <div class="circle ms-2 mt-3"><i data-feather="dollar-sign"></i></div>
-                        </div>
-                        <div class="container d-flex flex-column">
-                            <span style="font-size: 14px;">Ventas del mes</span>
-                            <span class="fw-bolder fs-4">78,120</span>
-                        </div>
+                    <div class="container d-flex flex-column">
+                        <span style="font-size: 14px;">Usuarios</span>
+                        <span class="fw-bolder fs-4">45</span>
                     </div>
-                    <div class="card-box">
-                        <div class="container">
-                            <div class="circle ms-2 mt-3"><i data-feather="user-check"></i></div>
-                        </div>
-                        <div class="container d-flex flex-column">
-                            <span style="font-size: 14px;">Usuarios activos</span>
-                            <span class="fw-bolder fs-4">25</span>
-                        </div>
+                </div>
+                <div class="card-box">
+                    <div class="container">
+                        <div class="circle ms-2 mt-3"><i data-feather="dollar-sign"></i></div>
+                    </div>
+                    <div class="container d-flex flex-column">
+                        <span style="font-size: 14px;">Ventas del mes</span>
+                        <span class="fw-bolder fs-4">78,120</span>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="container">
+                        <div class="circle ms-2 mt-3"><i data-feather="user-check"></i></div>
+                    </div>
+                    <div class="container d-flex flex-column">
+                        <span style="font-size: 14px;">Usuarios activos</span>
+                        <span class="fw-bolder fs-4">25</span>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+</main>
 
-    <jsp:include page="../../layouts/footer.jsp"/>
+<jsp:include page="../../layouts/footer.jsp"/>
 </body>
 </html>
+
+
+
+
