@@ -15,9 +15,9 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 @WebServlet(name = "admin", urlPatterns = {"/admin/inicio", "/admin/crear_producto", "/admin/products"})
-
 public class ServletAdmin extends HttpServlet {
 
     @Override
@@ -34,7 +34,7 @@ public class ServletAdmin extends HttpServlet {
                 response.sendRedirect(request.getContextPath() + "/crear_producto.jsp");
                 break;
             case "products":
-                response.sendRedirect(request.getContextPath() + "/products.jsp");
+                loadProductsData(request, response);
                 break;
             default:
                 loadInicioData(request, response);
@@ -63,6 +63,14 @@ public class ServletAdmin extends HttpServlet {
         request.setAttribute("totalEarnings", totalEarnings);
 
         request.getRequestDispatcher("/inicio.jsp").forward(request, response);
+    }
+
+    private void loadProductsData(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        ItemDao itemDao = new ItemDao(new MySQLConnection().connect());
+        List<Item> items = itemDao.getAllItems(); // Asegúrate de tener este método en tu DAO
+
+        request.setAttribute("items", items);
+        request.getRequestDispatcher("/products.jsp").forward(request, response);
     }
 
     private void createProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -99,36 +107,6 @@ public class ServletAdmin extends HttpServlet {
         }
     }
 }
-
-
-
-
-
-        switch (action) {
-            case "updateStatus":
-                String newStatus = request.getParameter("status");
-                order.setState(newStatus);
-                try {
-                    orderDao.updateOrderState(orderId, newStatus);
-                    response.sendRedirect(request.getContextPath() + "/admin/gestionar_pedidos?result=success");
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    response.sendRedirect(request.getContextPath() + "/admin/gestionar_pedidos?result=error");
-                }
-                break;
-            case "delete":
-                boolean deleteResult = orderDao.deleteOrder(orderId);
-                if (deleteResult) {
-                    response.sendRedirect(request.getContextPath() + "/admin/gestionar_pedidos?result=success");
-                } else {
-                    response.sendRedirect(request.getContextPath() + "/admin/gestionar_pedidos?result=error");
-                }
-                break;
-            default:
-                response.sendRedirect(request.getContextPath() + "/admin/gestionar_pedidos");
-                break;
-        }
-    }
 
 
 
