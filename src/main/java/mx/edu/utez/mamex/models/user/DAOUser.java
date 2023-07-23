@@ -52,23 +52,26 @@ public class DAOUser{
         User user = null;
         try {
             conn = new MySQLConnection().connect();
-            String query = "select * from users where id_user = ?";
-            pstm = conn.prepareStatement(query);
-            pstm.setLong(1, id);
-            rs = pstm.executeQuery();
-            while (rs.next()){
-                user = new User();
-                user.setId(rs.getLong("id_user"));
-                user.setNames(rs.getString("name_user"));
-                user.setLastnames(rs.getString("lastname"));
-                user.setEmail(rs.getString("email"));
-                user.setBirthday(rs.getString("birthday"));
-                user.setGender(rs.getString("gender"));
-                user.setImg_user(rs.getBytes("photo"));
+            cs = conn.prepareCall("{call mostrar_info(?)}");
+            cs.setLong(1, id);
+            boolean result = cs.execute();
+            if(result) {
+                rs = cs.getResultSet();
+                while (rs.next()) {
+                    user = new User();
+                    user.setId(rs.getLong("id_user"));
+                    user.setNames(rs.getString("name_user"));
+                    user.setLastnames(rs.getString("lastname"));
+                    user.setEmail(rs.getString("email"));
+                    user.setGender(rs.getString("sex"));
+                    user.setBirthday(rs.getString("birthday"));
+                    user.setImg_user(rs.getBytes("photo"));
+                }
             }
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }finally {
+        } catch (SQLException e) {
+            Logger.getLogger(DAOUser.class.getName())
+                    .log(Level.SEVERE, "ERROR findAll" + e.getMessage());
+        } finally {
             close();
         }
         return user;

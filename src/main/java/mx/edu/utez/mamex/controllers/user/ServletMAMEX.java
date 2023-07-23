@@ -74,7 +74,7 @@ public class ServletMAMEX extends HttpServlet {
 
             case "/user/personal-info":{
                 id = req.getParameter("user_id");
-                req.setAttribute("users", new DAOUser().findOne(id != null ? Long.parseLong(id) : 0L));
+                req.setAttribute("user", new DAOUser().findOne(id != null ? Long.parseLong(id) : 0L));
                 redirect = "/views/user/personal_info.jsp";
             }break;
 
