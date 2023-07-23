@@ -5,6 +5,7 @@ import mx.edu.utez.mamex.models.crud.DAORepository;
 import mx.edu.utez.mamex.utils.MySQLConnection;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -18,7 +19,32 @@ public class DAOUser{
 
 
     public List<User> findAll() {
-        return null;
+        List <User> users = new ArrayList<>();
+        User user = null;
+        try {
+            conn = new MySQLConnection().connect();
+            cs = conn.prepareCall("{call mostrar_info()}");
+            boolean result = cs.execute();
+            if(result) {
+                rs = cs.getResultSet();
+                while (rs.next()) {
+                    user = new User();
+                    user.setId(rs.getLong("id_user"));
+                    user.setNames(rs.getString("name_user"));
+                    user.setLastnames(rs.getString("lastname"));
+                    user.setEmail(rs.getString("email"));
+                    user.setGender(rs.getString("sex"));
+                    user.setBirthday(rs.getString("birthday"));
+                    user.setImg_user(rs.getBytes("photo"));
+                }
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(DAOUser.class.getName())
+                    .log(Level.SEVERE, "ERROR findAll" + e.getMessage());
+        } finally {
+            close();
+        }
+        return users;
     }
 
 
