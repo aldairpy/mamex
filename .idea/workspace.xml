@@ -9,25 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="Naco macuarro">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/user/edit-info.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/user/product_view.jsp" afterDir="false" />
+    <list default="true" id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="ADMIN 3.1 solo un cambio rapido">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/user/novedades.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/headAdmin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/headAdmin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/sidebar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/sidebar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/crear_producto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/crear_producto.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/inicio.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/inicio.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/products.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/contacto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/contacto.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/inicio_sesion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/inicio_sesion.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/nosotros.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/nosotros.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/personal_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/personal_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/registro_usuarios.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/registro_usuarios.jsp" afterDir="false" />
 
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,20 +89,8 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/views/admin" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.mamex">
-    <configuration name="DAOUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mx.edu.utez.mamex.models.user.DAOUser" />
-      <module name="mamex" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mx.edu.utez.mamex.models.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.index.jsp">
+
     <configuration name="MySQLConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mx.edu.utez.mamex.utils.MySQLConnection" />
       <module name="mamex" />
@@ -133,6 +105,9 @@
       </method>
     </configuration>
     <configuration name="crear_producto.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/views/admin/crear_producto.jsp">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/index.jsp">
       <method v="2" />
     </configuration>
     <configuration name="inicio.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/views/admin/inicio.jsp">
@@ -241,22 +216,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DAOUser" />
       <item itemvalue="Application.MySQLConnection" />
       <item itemvalue="JavaScript Debug.crear_producto.jsp" />
+      <item itemvalue="JavaScript Debug.index.jsp" />
       <item itemvalue="JavaScript Debug.inicio.jsp" />
       <item itemvalue="JavaScript Debug.products.jsp" />
       <item itemvalue="Tomcat Server.mamex" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MySQLConnection" />
-        <item itemvalue="Application.DAOUser" />
-        <item itemvalue="Application.MySQLConnection" />
+        <item itemvalue="JavaScript Debug.index.jsp" />
+        <item itemvalue="JavaScript Debug.products.jsp" />
+        <item itemvalue="JavaScript Debug.inicio.jsp" />
 
         <item itemvalue="Application.MySQLConnection" />
         <item itemvalue="JavaScript Debug.crear_producto.jsp" />
-        <item itemvalue="Application.DAOUser" />
       </list>
     </recent_temporary>
   </component>
@@ -334,7 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689958410746</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00003" summary="ADMIN 3.1 solo un cambio rapido">
+      <option name="closed" value="true" />
+      <created>1690086837707</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690086837707</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
 
     <servers />
   </component>
@@ -342,8 +324,9 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Naco macuarro" />
-    <option name="LAST_COMMIT_MESSAGE" value="Naco macuarro" />
+    <MESSAGE value="ADMIN 3" />
+    <MESSAGE value="ADMIN 3.1 solo un cambio rapido" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADMIN 3.1 solo un cambio rapido" />
 
   </component>
 </project>
