@@ -28,6 +28,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/personal_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/personal_info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/profile.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/registro_usuarios.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/registro_usuarios.jsp" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -86,8 +92,9 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\josue\Documents\Integradora 3C\mamex\src\main\webapp\assets\img" />
@@ -125,10 +132,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mamex" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.10" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="corretto-11">
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+    <configuration name="crear_producto.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/views/admin/crear_producto.jsp">
+      <method v="2" />
+    </configuration>
+    <configuration name="inicio.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/views/admin/inicio.jsp">
+      <method v="2" />
+    </configuration>
+    <configuration name="products.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/views/admin/products.jsp">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mamex" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.11" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="corretto-11">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="mamex:war exploded">
@@ -218,6 +243,9 @@
     <list>
       <item itemvalue="Application.DAOUser" />
       <item itemvalue="Application.MySQLConnection" />
+      <item itemvalue="JavaScript Debug.crear_producto.jsp" />
+      <item itemvalue="JavaScript Debug.inicio.jsp" />
+      <item itemvalue="JavaScript Debug.products.jsp" />
       <item itemvalue="Tomcat Server.mamex" />
     </list>
     <recent_temporary>
@@ -225,7 +253,10 @@
         <item itemvalue="Application.MySQLConnection" />
         <item itemvalue="Application.DAOUser" />
         <item itemvalue="Application.MySQLConnection" />
+
         <item itemvalue="Application.MySQLConnection" />
+        <item itemvalue="JavaScript Debug.crear_producto.jsp" />
+        <item itemvalue="Application.DAOUser" />
       </list>
     </recent_temporary>
   </component>
@@ -304,6 +335,7 @@
       <updated>1689958410746</updated>
     </task>
     <option name="localTasksCounter" value="2" />
+
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,5 +344,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Naco macuarro" />
     <option name="LAST_COMMIT_MESSAGE" value="Naco macuarro" />
+
   </component>
 </project>
