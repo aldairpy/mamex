@@ -53,16 +53,15 @@ public class DAOUser{
             //se realiza la conexion a la base de datos
             conn = new MySQLConnection().connect();
             //se define la sentencia mysql
-            String query = "INSERT INTO users (name_user, lastname, email, password) VALUES(?, ?, ?, ?);";
-            //se prepara la sentencia
-            pstm = conn.prepareStatement(query);
+            cs = conn.prepareCall("{call nuevo_usuario(?, ?, ?, ?, 'llaveencriptacion')}");
             //establecemos el valor a los parametros de la sentencia
-            pstm.setString(1, object.getNames());
-            pstm.setString(2, object.getLastnames());
-            pstm.setString(3, object.getEmail());
-            pstm.setString(4, object.getPassword());
+            cs.setString(1, object.getNames());
+            cs.setString(2, object.getLastnames());
+            cs.setString(3, object.getEmail());
+            cs.setString(4, object.getPassword());
             //retorna un valor 0 si la consulta es fallida o un 1 si es correcta
-            return pstm.executeUpdate() > 0;
+            boolean result = cs.execute();
+            return !result;
         } catch (SQLException e) {
             Logger.getLogger(DAOUser.class.getName()).log(Level.SEVERE, "Error save" + e.getMessage());
         } finally {
@@ -107,22 +106,26 @@ public class DAOUser{
     public User login(String email, String password){
         try{
             conn = new MySQLConnection().connect();
-            String query = "select * from users where email = ? and password = ?;";
-            pstm = conn.prepareStatement(query);
-            pstm.setString(1, email);
-            pstm.setString(2, password);
-            rs = pstm.executeQuery();
-            if(rs.next()){
-                User user = new User();
-                user.setId(rs.getLong("id_user"));
-                user.setRol(rs.getInt("rol"));
-                user.setEmail(rs.getString("email"));
-                user.setNames(rs.getString("name_user"));
-                user.setLastnames(rs.getString("lastname"));
-                user.setBirthday(rs.getString("birthday"));
-                user.setGender(rs.getString("sex"));
-                user.getImg_user();
-                return user;
+            cs = conn.prepareCall("{call desencriptar_contra (?, ?, 'llaveencriptacion')}");
+            cs.setString(1, email);
+            cs.setString(2, password);
+            boolean result = cs.execute();
+            if(result){
+                rs = cs.getResultSet();
+                if (rs.next()) {
+                    User user = new User();
+                    user.setId(rs.getLong("id_user"));
+                    user.setRol(rs.getInt("rol"));
+                    user.setEmail(rs.getString("email"));
+                    user.setNames(rs.getString("name_user"));
+                    user.setLastnames(rs.getString("lastname"));
+                    user.setBirthday(rs.getString("birthday"));
+                    user.setGender(rs.getString("sex"));
+                    user.getImg_user();
+                    rs.close();
+                    return user;
+                }
+                rs.close();
             }
         } catch (SQLException e) {
             Logger.getLogger(DAOUser.class.getName())
