@@ -31,7 +31,7 @@
                     </div>
                     <div class="container d-flex flex-column">
                         <span style="font-size: 14px;">Usuarios</span>
-                        <span class="fw-bolder fs-4">45</span>
+                        <span class="fw-bolder fs-4"><c:out value="${totalUsersCount}" /></span>
                     </div>
                 </div>
                 <div class="card-box">
@@ -40,7 +40,7 @@
                     </div>
                     <div class="container d-flex flex-column">
                         <span style="font-size: 14px;">Ventas del mes</span>
-                        <span class="fw-bolder fs-4">78,120</span>
+                        <span class="fw-bolder fs-4"><c:out value="${totalEarnings}" /></span>
                     </div>
                 </div>
                 <div class="card-box">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="container d-flex flex-column">
                         <span style="font-size: 14px;">Usuarios activos</span>
-                        <span class="fw-bolder fs-4">25</span>
+                        <span class="fw-bolder fs-4"><c:out value="${activeUsersCount}" /></span>
                     </div>
                 </div>
             </div>
@@ -60,6 +60,7 @@
 <jsp:include page="../../layouts/footer.jsp"/>
 </body>
 </html>
+
 
 
 

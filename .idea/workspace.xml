@@ -10,9 +10,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="ADMIN 3.1 solo un cambio rapido">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/user/novedades.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/ItemImageDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/ItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/ItemDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/user/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/css/nav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/5 THINGS I LOVE SATURDAY - Little Things Blogged.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/Crochet Shirt, Unisex Shirt, Crochet Multicolor Shirt, Crochet Shirt for Men, Crochet Beach Shirt, Crochet Cotton Shirt, Crochet Men Shirt.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/Elena Handbags Medium Crochet Cotton Bucket Bag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/F1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/F2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/F3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/F4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/Fibra Natura Luxor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/FwBEgeVX0AAeJqf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/Kartopu Cozy Wool Sport.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/Men_s Knitting Pattern Chunky Sweater_jumper Crew Neck - Etsy UK.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/NORSK.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/OIF.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/OIP (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/OIP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/R.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/Raffia Knot Bag.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/Rancho_Cucamonga_Tree_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/copia.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/descarga.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/e9be2a1f1471feb0c1b18083309ea295.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/eurus sweater (english).jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/image 27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/image 28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/peaky.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/play-svgrepo-com.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/twitter-154-svgrepo-com.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/whatsapp-svgrepo-com.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/img/yt-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/js/feather.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/svgs/guard-lock-padlock-3-svgrepo-com.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/svgs/package-box-svgrepo-com.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/svgs/placeholder-maps-and-location-svgrepo-com.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/svgs/unlock-filled-svgrepo-com.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/svgs/user-information-svgrepo-com.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/svgs/user-key-svgrepo-com.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/layouts/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/layouts/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/layouts/headAdmin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/layouts/nav.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/layouts/sidebar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/views/admin/crear_producto.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/views/admin/inicio.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/views/admin/products.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/views/user/contacto.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/views/user/inicio_sesion.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/views/user/nosotros.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/views/user/personal_info.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/views/user/profile.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/views/user/registro_usuarios.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/crear_producto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/crear_producto.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/inicio.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/inicio.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/products.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +86,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,7 +126,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;betov2&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Maisolv3&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/josue/Documents/Apps Web/Apps/Mike/secondapp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -71,14 +134,13 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;IntelliLang.Configuration&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\josue\Documents\Integradora 3C\mamex\src\main\webapp\assets\img" />
@@ -89,8 +151,7 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/views/admin" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.jsp">
-
+  <component name="RunManager" selected="Tomcat Server.mamex">
     <configuration name="MySQLConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mx.edu.utez.mamex.utils.MySQLConnection" />
       <module name="mamex" />
@@ -127,7 +188,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mamex" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.11" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="corretto-11">
+    <configuration name="mamex" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.10" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="corretto-11">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -225,12 +286,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.crear_producto.jsp" />
         <item itemvalue="JavaScript Debug.index.jsp" />
         <item itemvalue="JavaScript Debug.products.jsp" />
         <item itemvalue="JavaScript Debug.inicio.jsp" />
-
         <item itemvalue="Application.MySQLConnection" />
-        <item itemvalue="JavaScript Debug.crear_producto.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -297,16 +357,24 @@
       <workItem from="1689864382262" duration="4010000" />
       <workItem from="1689877184732" duration="2106000" />
       <workItem from="1689950273642" duration="2959000" />
-      <workItem from="1689957488371" duration="15569000" />
-      <workItem from="1690063447291" duration="19627000" />
+      <workItem from="1689957488371" duration="831000" />
+      <workItem from="1689959553346" duration="18495000" />
     </task>
-    <task id="LOCAL-00001" summary="Naco macuarro">
+    <task id="LOCAL-00001" summary="ADMIN 3">
       <option name="closed" value="true" />
-      <created>1689958410746</created>
+      <created>1690086120736</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1689958410746</updated>
+      <updated>1690086120736</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ADMIN 3">
+      <option name="closed" value="true" />
+      <created>1690086241018</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690086241019</updated>
     </task>
     <task id="LOCAL-00003" summary="ADMIN 3.1 solo un cambio rapido">
       <option name="closed" value="true" />
@@ -317,16 +385,25 @@
       <updated>1690086837707</updated>
     </task>
     <option name="localTasksCounter" value="4" />
-
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ADMIN 3" />
     <MESSAGE value="ADMIN 3.1 solo un cambio rapido" />
     <option name="LAST_COMMIT_MESSAGE" value="ADMIN 3.1 solo un cambio rapido" />
-
   </component>
 </project>

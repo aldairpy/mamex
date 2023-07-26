@@ -1,13 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: albertovazquez
-  Date: 09/07/23
-  Time: 6:04
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 
 <html>
 <head>
@@ -97,42 +89,28 @@
                             <th scope="col">ID</th>
                             <th scope="col">Producto</th>
                             <th scope="col">Precio</th>
-                            <th scope="col">Categoría</th>
+                            <th scope="col">Descripcion</th>
                             <th scope="col">Disponibilidad</th>
                             <th scope="col">Inventario</th>
-                            <th scope="col">Acciones</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Producto 1</td>
-                            <td>$100.00</td>
-                            <td>Categoría 1</td>
-                            <td>Disponible</td>
-                            <td>100</td>
-                            <td>
-                                <a href="./editar_producto.jsp" style="text-decoration: none">
-                                    <button class="btn btn-primary btn-sm btn-outline"><i data-feather="edit"></i></button>
-                                </a>
-                                <button class="btn btn-danger btn-sm btn-outline"><i data-feather="trash"></i></button>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Producto 2</td>
-                            <td>$ 200.00</td>
-                            <td>Categoría 2</td>
-                            <td>Disponible</td>
-                            <td>200</td>
-                            <td>
-                                <a href="./editar_producto.jsp" style="text-decoration: none">
-                                    <button class="btn btn-primary btn-sm btn-outline"><i data-feather="edit"></i></button>
-                                </a>
-                                <button class="btn btn-danger btn-sm btn-outline"><i data-feather="trash"></i></button>
-                            </td>
-                        </tr>
+                        <c:forEach var="item" items="${items}">
+                            <tr>
+                                <th scope="row">${item.id}</th>
+                                <td>${item.name}</td>
+                                <td>$${item.unitPrice}</td>
+                                <td>${item.description}</td>
+                                <td>${item.available}</td>
+                                <td>${item.stock}</td>
+                                <td>
+                                    <a href="./editar_producto.jsp?id=${item.id}" style="text-decoration: none">
+                                        <button class="btn btn-primary btn-sm btn-outline"><i data-feather="edit"></i></button>
+                                    </a>
+                                    <button class="btn btn-danger btn-sm btn-outline"><i data-feather="trash"></i></button>
+                                </td>
+                            </tr>
+                        </c:forEach>
                         </tbody>
                     </table>
 
