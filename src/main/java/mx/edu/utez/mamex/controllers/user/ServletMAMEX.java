@@ -7,7 +7,6 @@ import java.sql.Blob;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
-import mx.edu.utez.mamex.models.star.StarProduct;
 import mx.edu.utez.mamex.models.user.DAOUser;
 import mx.edu.utez.mamex.models.user.User;
 import mx.edu.utez.mamex.models.user.UserLogin;
@@ -36,8 +35,7 @@ import java.util.UUID;
         "/user/update-profile",
         "/user/AboutUs",
         "/user/personal-info",
-        "/user/star-a-product",
-        "/user/star-view"
+        "/user/novedades"
 }) //endpoints para saber a donde redirigir al usuario
 public class ServletMAMEX extends HttpServlet {
     private String action;
@@ -75,12 +73,11 @@ public class ServletMAMEX extends HttpServlet {
             }
             break;
 
-            case "/user/personal-info": {
+            case "/user/personal-info":{
                 id = req.getParameter("user_id");
                 req.setAttribute("user", new DAOUser().findOne(id != null ? Long.parseLong(id) : 0L));
                 redirect = "/views/user/personal_info.jsp";
-            }
-            break;
+            }break;
 
             case "/user/logout": {
                 try {
@@ -138,20 +135,20 @@ public class ServletMAMEX extends HttpServlet {
             }
             break;
 
-            case "/user/star-view": {
-                redirect = "/views/user/starProduct";
-            }
-            break;
-
             case "/user/update-profile": {
                 redirect = "/views/user/edit-info.jsp";
             }
             break;
 
-            default: {
-                System.out.println(action);
+            case "/user/novedades": {
+                redirect = "/views/user/novedades.jsp";
             }
             break;
+
+
+            default:
+                System.out.println(action);
+                break;
         }
         req.getRequestDispatcher(redirect).forward(req, resp);
     }
@@ -164,7 +161,7 @@ public class ServletMAMEX extends HttpServlet {
         resp.setContentType("text/html");
         action = req.getServletPath();
         switch (action) {
-            case "/user/register": {
+            case "/user/register":
                 try {
                     names = req.getParameter("names");
                     lastnames = req.getParameter("lastnames");
@@ -182,8 +179,7 @@ public class ServletMAMEX extends HttpServlet {
                     redirect = "/user/mamex?result=" + false
                             + "&message" + URLEncoder.encode("Error :/ Acción no realizada correctamente", StandardCharsets.UTF_8);
                 }
-            }
-            break;
+                break;
 
             case "/user/login": {
                 try {
@@ -203,13 +199,13 @@ public class ServletMAMEX extends HttpServlet {
                                     + "&message" + URLEncoder.encode("Inicio de sesion correctamente! :D" + user.getNames(), StandardCharsets.UTF_8);
                         }
                     } else {
-                        redirect = "/user/login?result=" + false
+                        redirect = "/user/mamex?result=" + false
                                 + "&message" + URLEncoder.encode("Usuario o contraseña incorrectos", StandardCharsets.UTF_8);
                     }
 
                 } catch (Exception e) {
                     System.out.println("Error: " + e.getMessage());
-                    System.out.println(email + " " + password);
+                    System.out.println(email +" "+ password);
                     System.out.println(e);
                     redirect = "/user/mamex?result=" + false
                             + "&message" + URLEncoder.encode("Credentials Missmatch", StandardCharsets.UTF_8);
@@ -237,7 +233,7 @@ public class ServletMAMEX extends HttpServlet {
                     id = req.getParameter("id");
                     User foundUser = new DAOUser().findOne(id != null ? Long.parseLong(id) : 0L);
                     File oldFile = new File(directory + File.separator + foundUser.getFileName());
-                    if (oldFile.exists()) oldFile.delete();
+                    if(oldFile.exists()) oldFile.delete();
                     for (Part part : req.getParts()) {
                         fileName = part.getSubmittedFileName();
                         if (fileName != null) {
@@ -273,28 +269,13 @@ public class ServletMAMEX extends HttpServlet {
             }
             break;
 
-            case "/user/go-to-pay": {
+            case "/user/go-to-pay":{
                 try {
                     //traer el carrito de compras con los productos para despues mandar un correo electronico con los productos
                     //el costo total y la informacion de pago.
-                } catch (Exception e) {
+                }catch (Exception e){
                 }
-            }
-            break;
-
-            case "/user/star-a-product": {
-                try {
-                    String comment = req.getParameter("comment");
-                    StarProduct comm = new StarProduct(comment);
-                    boolean result = new DAOUser().starProduct(comm);
-                    if (result) {
-                        redirect = "";
-                    }
-                } catch (Exception e) {
-
-                }
-            }
-            break;
+            }break;
 
             default: {
                 redirect = "/user/mamex";
