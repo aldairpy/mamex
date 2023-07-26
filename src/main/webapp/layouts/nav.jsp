@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
     <meta charset="UTF-8"/>
@@ -27,11 +27,11 @@
         <div class="collapse text-center navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <ul class="mt-lg-3 d-lg-flex justify-content-lg-center justify-content-center list-unstyled">
-                    <li><a href="/user/mamex" class="nav-link">Inicio</a></li>
+                    <li><a href="${pageContext.request.contextPath}/user/mamex" class="nav-link">Inicio</a></li>
                     <li><a href="" class="nav-link">Categorias</a></li>
                     <li><a href="" class="nav-link">Novedades</a></li>
-                    <li><a href="/user/contacto" class="nav-link">Contacto</a></li>
-                    <li><a href="/user/AboutUs" class="nav-link">Nosotros</a></li>
+                    <li><a href="${pageContext.request.contextPath}/user/contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="${pageContext.request.contextPath}/user/AboutUs" class="nav-link">Nosotros</a></li>
                 </ul>
             </div>
             <div class="container">
@@ -45,13 +45,11 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-sm-start">
                             <li>
-                                <form action="">
-                                    <button type="button" class="btn">
-                                        <a href="${pageContext.request.contextPath}/user/profile" style="text-decoration: none; color: black">Mi perfil</a>
-                                    </button>
-                                </form>
+                                <button type="button" class="btn">
+                                    <a href="/user/login" style="text-decoration: none; color: black">Mi perfil</a>
+                                </button>
                             </li>
-                            <li><a class="dropdown-item" href="/user/register-view">Registrarse</a></li>
+                            <li><a class="dropdown-item" href="${pageContext.request.contextPath}/user/register-view">Registrarse</a></li>
                         </ul>
                     </div>
                     <button class="icon-button m-2">

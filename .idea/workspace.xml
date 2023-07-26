@@ -16,6 +16,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/ItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/items/ItemDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/models/user/UserDao.java" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/WEB-INF/web.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/css/bootstrap.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/css/nav.css" beforeDir="false" />
@@ -82,6 +83,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -92,12 +94,10 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -106,14 +106,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="2RDJi2Yb55gmQeH8cHyWFofaDlQ" />
+  <component name="ProjectId" id="2T3NrnlD7L0B3hcOUFLAyAhqi4s" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -121,16 +114,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+
     &quot;git-widget-placeholder&quot;: &quot;Maisolv3&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/josue/Documents/Apps Web/Apps/Mike/secondapp&quot;,
+
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
@@ -190,6 +179,13 @@
     </configuration>
     <configuration name="mamex" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.10" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="corretto-11">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Tomcat 10.1.11" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.11" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="corretto-11" nameIsGenerated="true">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="mamex:war exploded">
@@ -199,7 +195,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="30fe355c-2af0-4795-9b48-00b7041f198c" />
+        <option name="BASE_DIRECTORY_NAME" value="3e595213-42e7-4b50-ab1d-357422b8195c" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -207,7 +203,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="61228" />
+        <option name="DEBUG_PORT" value="56206" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -277,9 +273,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.DAOUser" />
       <item itemvalue="Application.MySQLConnection" />
       <item itemvalue="JavaScript Debug.crear_producto.jsp" />
-      <item itemvalue="JavaScript Debug.index.jsp" />
       <item itemvalue="JavaScript Debug.inicio.jsp" />
       <item itemvalue="JavaScript Debug.products.jsp" />
       <item itemvalue="Tomcat Server.mamex" />
@@ -291,14 +287,15 @@
         <item itemvalue="JavaScript Debug.products.jsp" />
         <item itemvalue="JavaScript Debug.inicio.jsp" />
         <item itemvalue="Application.MySQLConnection" />
+
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bb5872b3-da9c-494c-a861-92a7a71f9bb2" name="Changes" comment="" />
-      <created>1689865827685</created>
+      <changelist id="ab218b7b-ab39-4931-aa17-b64d49e36def" name="Changes" comment="" />
+      <created>1690268007384</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686778844482</updated>
@@ -375,16 +372,18 @@
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
       <updated>1690086241019</updated>
+
     </task>
-    <task id="LOCAL-00003" summary="ADMIN 3.1 solo un cambio rapido">
+    <task id="LOCAL-00002" summary="ADMIN 3">
       <option name="closed" value="true" />
-      <created>1690086837707</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+      <created>1690086241018</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1690086837707</updated>
+      <updated>1690086241019</updated>
     </task>
     <option name="localTasksCounter" value="4" />
+
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,5 +404,6 @@
     <MESSAGE value="ADMIN 3" />
     <MESSAGE value="ADMIN 3.1 solo un cambio rapido" />
     <option name="LAST_COMMIT_MESSAGE" value="ADMIN 3.1 solo un cambio rapido" />
+
   </component>
 </project>

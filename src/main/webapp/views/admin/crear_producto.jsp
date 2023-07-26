@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,6 +92,7 @@
             object-fit: cover;
         }
 
+
     </style>
     <link rel="icon" href="${pageContext.request.contextPath}/assets/img/OIP.jpg">
     <jsp:include page="../../layouts/headAdmin.jsp"/>
@@ -157,6 +159,7 @@
             </ul>
             <form action="/user/unlogin" method="post" id="unlogin">
                 <button class="btn bg-dark ms-5" style="color: white;">Cerrar sesión</button>
+
             </form>
         </div>
     </div>
@@ -221,6 +224,7 @@
                                 </form>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

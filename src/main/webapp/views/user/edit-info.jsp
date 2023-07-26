@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -19,12 +21,7 @@
 
 <div class="container position-absolute top-50 start-50 translate-middle w-50">
     <div class="container">
-        <h6>Nombre de la cosa a editar</h6>
-        <div class="card box-shadow-1">
-            <form action="">
 
-            </form>
-        </div>
     </div>
 </div>
 

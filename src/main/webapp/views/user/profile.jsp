@@ -6,14 +6,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
 <html>
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <jsp:include page="../../layouts/head.jsp"/>
-    <title>Manos Mexicanas</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <jsp:include page="../../layouts/head.jsp"/>
+  <title>Manos Mexicanas</title>
 </head>
 <body>
 <jsp:include page="../../layouts/nav.jsp"/>
@@ -26,7 +26,7 @@
         </c:forEach>
         <div class="container mb-3 w-100">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <div class="col-12 col-md-12 col-lg-4">
                     <a href="#" class="links">
                         <div class="card">
                             <div class="row justify-content-center mb-3">
@@ -37,7 +37,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <div class="col-12 col-md-12 col-lg-4">
                     <a href="#" class="links">
                         <div class="card">
                             <div class="row justify-content-center mb-3">
@@ -48,7 +48,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <div class="col-12 col-md-12 col-lg-4">
                     <a href="../../views/user/personal_info.jsp" class="links">
                         <div class="card">
                             <div class="row justify-content-center mb-3">
@@ -60,9 +60,46 @@
                     </a>
                 </div>
             </div>
-        </div>
+          </div>
+          <div class="form-group mb-3">
+            <div class="row">
+              <div class="col">
+                <label for="birthday" class="fw-bold">Fecha de nacimiento:</label>
+                <input type="date" name="birthday" id="birthday" class="form-control" value="${user.birthday}" required/>
+                <div class="invalid-feedback">Campo obligatorio</div>
+              </div>
+              <div class="col">
+                <label for="username" class="fw-bold">Nombre de usuario:</label>
+                <input type="text" name="username" id="username" class="form-control" value="${user.username}" required/>
+                <div class="invalid-feedback">Campo obligatorio</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <div class="row">
+              <div class="col text-end">
+                <a href="/user/users" class="btn btn-outline-danger btn-sm">
+                  CANCELAR
+                </a>
+                <button type="submit" class="btn btn-outline-success btn-sm">
+                  ACEPTAR
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
 </div>
+
+
+
+
+
+
+
+
 
 
 <jsp:include page="../../layouts/footer.jsp"/>
