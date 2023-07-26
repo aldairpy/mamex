@@ -1,7 +1,7 @@
 package mx.edu.utez.mamex.models.items;
-import java.util.Date;
 
-
+import java.sql.Date;
+import java.util.Map;
 
 public class Item {
     private int id;
@@ -14,9 +14,9 @@ public class Item {
     private Date updateDate;
     private int stock;
     private String notes;
+    private Map<String, byte[]> images;
 
-    public Item(int id, String name, String description, String available, String color, double unitPrice,
-                Date createDate, Date updateDate, int stock, String notes) {
+    public Item(int id, String name, String description, String available, String color, double unitPrice, Date createDate, Date updateDate, int stock, String notes, Map<String, byte[]> images) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -27,7 +27,9 @@ public class Item {
         this.updateDate = updateDate;
         this.stock = stock;
         this.notes = notes;
+        this.images = images;
     }
+
 
     public int getId() {
         return id;
@@ -108,5 +110,15 @@ public class Item {
     public void setNotes(String notes) {
         this.notes = notes;
     }
+
+    public Map<String, byte[]> getImages() {
+        return images;
+    }
+
+    public void setImages(Map<String, byte[]> images) {
+        this.images = images;
+    }
 }
+
+
 
