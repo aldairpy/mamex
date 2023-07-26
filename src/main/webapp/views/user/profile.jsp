@@ -18,31 +18,47 @@
 <body>
 <jsp:include page="../../layouts/nav.jsp"/>
 
-<div class="container-fluid">
-  <div class="col">
-    <div class="card mt-5">
-      <div class="card-header">Modificación de usuario</div>
-      <div class="card-body">
-        <form id="user-form" class="needs-validation" novalidate action="/user/update" method="post">
-          <input hidden value="${user.id}" name="id"/>
-          <input hidden value="${user.status}" name="status">
-          <div class="from-group mb-3">
-            <div class="row">
-              <div class="col">
-                <label for="name" class="fw-bold">Nombre:</label>
-                <input type="text" name="name" id="name" class="form-control" value="${user.name}" required/>
-                <div class="invalid-feedback">Campo obligatorio</div>
-              </div>
-              <div class="col">
-                <label for="surname" class="fw-bold">Primer apellido:</label>
-                <input type="text" name="surname" id="surname" class="form-control" value="${user.surname}" required/>
-                <div class="invalid-feedback">Campo obligatorio</div>
-              </div>
-              <div class="col">
-                <label for="lastname" class="fw-bold">Segundo apellido:</label>
-                <input type="text" name="lastname" id="lastname" class="form-control" value="${user.lastname}" required/>
-                <div class="invalid-feedback">Campo obligatorio</div>
-              </div>
+<div class="container mt-5">
+    <div class="container text-center w-75 mt-3">
+        <c:forEach var="user" items="${users}" >
+            <img src="${pageContext.request.contextPath}/assets/img/OIP.jpg" alt="Profile picture">
+            <p>${user.name_user}</p>
+        </c:forEach>
+        <div class="container mb-3 w-100">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <a href="#" class="links">
+                        <div class="card">
+                            <div class="row justify-content-center mb-3">
+                                <img src="../../assets/svgs/package-box-svgrepo-com.svg" alt="" style="width: 80px; height: 80px">
+                                <h6>Historial de pedidos</h6>
+                                <small>Consulta todos tus pedidos</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <a href="#" class="links">
+                        <div class="card">
+                            <div class="row justify-content-center mb-3">
+                                <img src="${pageContext.request.contextPath}/assets/svgs/unlock-filled-svgrepo-com.svg" alt="" style="width: 80px; height: 80px">
+                                <h6>Inicio de sesión y seguridad</h6>
+                                <small>Cambiar correo electrónico y contraseña</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <a href="../../views/user/personal_info.jsp" class="links">
+                        <div class="card">
+                            <div class="row justify-content-center mb-3">
+                                <img src="../../assets/svgs/user-information-svgrepo-com.svg" alt="" style="width: 80px; height: 80px">
+                                <h6>Información personal</h6>
+                                <small>Configura tus datos personales</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
           </div>
           <div class="form-group mb-3">
