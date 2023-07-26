@@ -30,7 +30,7 @@ public class UserDao {
 
     public int getTotalUsersCount() {
         int count = 0;
-        String sql = "SELECT COUNT(*) FROM users";
+        String sql = "SELECT * FROM totalUsers";
         try (PreparedStatement ps = con.prepareStatement(sql)) {
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -39,7 +39,6 @@ public class UserDao {
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
-        System.out.println("Total users count: " + count);
         return count;
     }
 }

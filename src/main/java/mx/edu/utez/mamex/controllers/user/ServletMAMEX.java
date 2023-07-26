@@ -35,7 +35,6 @@ import java.util.UUID;
         "/user/update-profile",
         "/user/AboutUs",
         "/user/personal-info",
-        "/user/novedades"
 }) //endpoints para saber a donde redirigir al usuario
 public class ServletMAMEX extends HttpServlet {
     private String action;
@@ -139,13 +138,6 @@ public class ServletMAMEX extends HttpServlet {
                 redirect = "/views/user/edit-info.jsp";
             }
             break;
-
-            case "/user/novedades": {
-                redirect = "/views/user/novedades.jsp";
-            }
-            break;
-
-
             default:
                 System.out.println(action);
                 break;
