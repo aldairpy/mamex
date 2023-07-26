@@ -51,7 +51,7 @@
                         posibilidades con nuestra amplia
                         colección de tejidos de alta calidad
                         cuidadosamente seleccionados para que puedas crear prendas únicas y
-                        proyectos creativos que reflejen tu estilo y pasión por la moda.</em></p>
+                        proyectos creativos que reflejen tu estilo y pasión por la moda.</p>
                     <a href="/user/register-view" style="text-decoration: none; color: whitesmoke;">
                         <button class="btn btn-dark m-4"
                                 style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;">Regístrate</button></a>

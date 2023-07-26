@@ -34,7 +34,7 @@ import java.util.UUID;
         "/user/profile",
         "/user/update-profile",
         "/user/AboutUs",
-        "/user/personal-info"
+        "/user/personal-info",
 }) //endpoints para saber a donde redirigir al usuario
 public class ServletMAMEX extends HttpServlet {
     private String action;
@@ -134,6 +134,10 @@ public class ServletMAMEX extends HttpServlet {
             }
             break;
 
+            case "/user/update-profile": {
+                redirect = "/views/user/edit-info.jsp";
+            }
+            break;
             default:
                 System.out.println(action);
                 break;
