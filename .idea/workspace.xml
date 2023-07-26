@@ -9,8 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eda8a18-24dd-4273-bea9-26485db1be3b" name="Changes" comment="">
+    <list default="true" id="ab218b7b-ab39-4931-aa17-b64d49e36def" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletMAMEX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/controllers/user/ServletMAMEX.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/WEB-INF/web.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/css/bootstrap.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/assets/css/nav.css" beforeDir="false" />
@@ -69,9 +70,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/views/user/profile.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/edu/utez/mamex/webapp/views/user/registro_usuarios.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/nav.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/edit-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/edit-info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/personal_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/personal_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/profile.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +92,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectId" id="2SxmOPqQXDQDiSwY13VTw6Nh4dx" />
+  <component name="ProjectId" id="2T3NrnlD7L0B3hcOUFLAyAhqi4s" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -108,14 +109,12 @@
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager">
-    <configuration name="Tomcat 10.1.11" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.10" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="corretto-11">
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+    <configuration name="Tomcat 10.1.11" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.11" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="corretto-11" nameIsGenerated="true">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -127,7 +126,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="8f35d6d1-0263-4b55-8500-45156f8a5ee5" />
+        <option name="BASE_DIRECTORY_NAME" value="3e595213-42e7-4b50-ab1d-357422b8195c" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -135,7 +134,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53509" />
+        <option name="DEBUG_PORT" value="56206" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -208,18 +207,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1eda8a18-24dd-4273-bea9-26485db1be3b" name="Changes" comment="" />
-      <created>1690096573787</created>
+      <changelist id="ab218b7b-ab39-4931-aa17-b64d49e36def" name="Changes" comment="" />
+      <created>1690268007384</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1690096573787</updated>
-      <workItem from="1690096574812" duration="910000" />
-      <workItem from="1690099257069" duration="608000" />
-      <workItem from="1690135460279" duration="1484000" />
-      <workItem from="1690164369011" duration="93000" />
-      <workItem from="1690299007752" duration="42000" />
-      <workItem from="1690384616499" duration="875000" />
-      <workItem from="1690386086616" duration="121000" />
+      <updated>1690268007384</updated>
+      <workItem from="1690268009413" duration="255000" />
+      <workItem from="1690268272381" duration="309000" />
+      <workItem from="1690299044767" duration="203000" />
+      <workItem from="1690386189364" duration="577000" />
     </task>
     <servers />
   </component>
