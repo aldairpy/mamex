@@ -2,6 +2,7 @@ package mx.edu.utez.mamex.models.user;
 
 
 import mx.edu.utez.mamex.models.crud.DAORepository;
+import mx.edu.utez.mamex.models.star.StarProduct;
 import mx.edu.utez.mamex.utils.MySQLConnection;
 
 import java.sql.*;
@@ -10,22 +11,21 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class DAOUser{
+public class DAOUser {
     private Connection conn;
     private PreparedStatement pstm;
     private CallableStatement cs;
     private ResultSet rs;
 
 
-
     public List<User> findAll() {
-        List <User> users = new ArrayList<>();
+        List<User> users = new ArrayList<>();
         User user = null;
         try {
             conn = new MySQLConnection().connect();
             cs = conn.prepareCall("{call mostrar_info()}");
             boolean result = cs.execute();
-            if(result) {
+            if (result) {
                 rs = cs.getResultSet();
                 while (rs.next()) {
                     user = new User();
@@ -55,7 +55,7 @@ public class DAOUser{
             cs = conn.prepareCall("{call mostrar_info(?)}");
             cs.setLong(1, id);
             boolean result = cs.execute();
-            if(result) {
+            if (result) {
                 rs = cs.getResultSet();
                 while (rs.next()) {
                     user = new User();
@@ -105,7 +105,7 @@ public class DAOUser{
 
 
     public boolean update(User object) {
-        try{
+        try {
             conn = new MySQLConnection().connect();
             String query = "update users set name_user = ?, lastname = ?, email = ?, birthday = ?, sex = ?" +
                     ", photo = ? where user_id_user = ?;";
@@ -118,7 +118,7 @@ public class DAOUser{
             pstm.setBytes(6, object.getImg_user());
             pstm.setLong(7, object.getId());
             return pstm.executeUpdate() > 0;
-        }catch (SQLException e){
+        } catch (SQLException e) {
             Logger.getLogger(DAOUser.class.getName()).log(Level.SEVERE, "Error update" + e.getMessage());
         }
         return false;
@@ -132,14 +132,14 @@ public class DAOUser{
         return false;
     }
 
-    public User login(String email, String password){
-        try{
+    public User login(String email, String password) {
+        try {
             conn = new MySQLConnection().connect();
             cs = conn.prepareCall("{call desencriptar_contra (?, ?, 'llaveencriptacion')}");
             cs.setString(1, email);
             cs.setString(2, password);
             boolean result = cs.execute();
-            if(result){
+            if (result) {
                 rs = cs.getResultSet();
                 if (rs.next()) {
                     User user = new User();
@@ -166,16 +166,31 @@ public class DAOUser{
         return null;
     }
 
+    public boolean starProduct(StarProduct object) {
+        try {
+            conn = new MySQLConnection().connect();
+            cs = conn.prepareCall("{call calificar_producto(?)}");
+            cs.setString(1, object.getComment());
+            boolean result = cs.execute();
+            return !result;
+        } catch (SQLException e) {
+            Logger.getLogger(DAOUser.class.getName()).log(Level.SEVERE, "Error save" + e.getMessage());
+        } finally {
+            close();
+        }
+        return false;
+    }
 
-        public void close () {
-            try {
-                if (conn != null) conn.close();
-                if (pstm != null) pstm.close();
-                if (rs != null) rs.close();
-                if (cs != null) cs.close();
-            } catch (SQLException e) {
 
-            }
+    public void close() {
+        try {
+            if (conn != null) conn.close();
+            if (pstm != null) pstm.close();
+            if (rs != null) rs.close();
+            if (cs != null) cs.close();
+        } catch (SQLException e) {
+
         }
     }
+}
 
