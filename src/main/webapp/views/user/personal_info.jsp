@@ -37,8 +37,9 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-4 col-md-8 col-lg-6">
-                    <div class="card box-shadow-1">
-                        <div class="card-title text-center"><img class="profile-img" src="../../assets/img/OIP.jpg" alt="profile picture"></div>
+                    <div class="card box-shadow-1" style="border-radius: 0">
+                        <div class="card-title text-center"><img class="profile-img" src="../../assets/img/OIP.jpg"
+                                                                 alt="profile picture"></div>
                         <div class="card-body m-0 p-0">
                             <div class="table-responsive">
                                 <table class="table mb-0">
@@ -62,20 +63,20 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <form action="" class="mb-0 text-end">
-                                <a href="edit-info.jsp">ad</a>
-                                <button class="btn btn-outline-dark m-2"><small>Editar </small><i class="custom-icon" data-feather="arrow-right"></i></button>
+                            <form class="mb-0 text-end">
+                                <a href="${pageContext.request.contextPath}/views/user/edit-info.jsp">
+                                    <button class="btn btn-outline-dark m-2"><small>Editar </small><i
+                                            class="custom-icon" data-feather="arrow-right"></i></button>
+                                </a>
                             </form>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 
 </main>
-
 
 
 <jsp:include page="../../layouts/footer.jsp"/>

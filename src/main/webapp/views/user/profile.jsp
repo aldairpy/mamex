@@ -26,7 +26,7 @@
         </c:forEach>
         <div class="container mb-3 w-100">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <div class="col-12 col-md-12 col-lg-4">
                     <a href="#" class="links">
                         <div class="card">
                             <div class="row justify-content-center mb-3">
@@ -37,7 +37,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <div class="col-12 col-md-12 col-lg-4">
                     <a href="#" class="links">
                         <div class="card">
                             <div class="row justify-content-center mb-3">
@@ -48,7 +48,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <div class="col-12 col-md-12 col-lg-4">
                     <a href="../../views/user/personal_info.jsp" class="links">
                         <div class="card">
                             <div class="row justify-content-center mb-3">

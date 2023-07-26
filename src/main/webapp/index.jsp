@@ -25,7 +25,6 @@
             </div>
             <div class="carousel-item">
                 <img src="${pageContext.request.contextPath}/assets/img/F3.jpg" class="d-block img-fluid w-100" alt="...">
-
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -51,7 +50,7 @@
                         posibilidades con nuestra amplia
                         colección de tejidos de alta calidad
                         cuidadosamente seleccionados para que puedas crear prendas únicas y
-                        proyectos creativos que reflejen tu estilo y pasión por la moda.</em></p>
+                        proyectos creativos que reflejen tu estilo y pasión por la moda.</p>
                     <a href="/user/register-view" style="text-decoration: none; color: whitesmoke;">
                         <button class="btn btn-dark m-4"
                                 style="font-weight: 300; border-radius: 0; padding: 10px; width: 150px;">Regístrate</button></a>
