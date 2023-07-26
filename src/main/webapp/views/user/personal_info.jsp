@@ -17,7 +17,7 @@
         }
 
         .card {
-            width: 600px;
+            width: 760px;
             height: 50px;
         }
     </style>
@@ -74,7 +74,6 @@
             </div>
         </div>
     </div>
-
 </main>
 
 <script src="${pageContext.request.contextPath}/assets/js/bootstrap.bundle.min.js"></script>
