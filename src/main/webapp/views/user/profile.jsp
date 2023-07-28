@@ -70,7 +70,7 @@
               </div>
               <div class="col">
                 <label for="username" class="fw-bold">Nombre de usuario:</label>
-                <input type="text" name="username" id="username" class="form-control" value="${user.username}" required/>
+                <input type="text" name="username" id="username" class="form-control" value="${user.name_user}" required/>
                 <div class="invalid-feedback">Campo obligatorio</div>
               </div>
             </div>

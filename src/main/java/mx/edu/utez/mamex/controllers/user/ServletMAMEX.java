@@ -74,9 +74,12 @@ public class ServletMAMEX extends HttpServlet {
             break;
 
             case "/user/personal-info":{
-                id = req.getParameter("user_id");
-                req.setAttribute("user", new DAOUser().findOne(id != null ? Long.parseLong(id) : 0L));
-                redirect = "/views/user/personal_info.jsp";
+                session = req.getSession(false);
+                if (session != null) {
+                    id = (String) session.getAttribute("user_id");
+                    req.setAttribute("user", new DAOUser().findOne(id != null ? Long.parseLong(id) : 0L));
+                    redirect = "/views/user/personal_info.jsp";
+                }
             }break;
 
             case "/user/logout": {
@@ -126,7 +129,7 @@ public class ServletMAMEX extends HttpServlet {
             break;
 
             case "/user/profile": {
-                redirect = "/views/user/profile.jsp";
+                redirect = "/views/user/personal_info.jsp";
             }
             break;
 

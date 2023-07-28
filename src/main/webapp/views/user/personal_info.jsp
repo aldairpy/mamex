@@ -1,12 +1,8 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: albertovd
-  Date: 18/07/23
-  Time: 13:58
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="mx.edu.utez.mamex.models.user.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<% User user = (User) request.getAttribute("user"); %>
+
 <html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -43,22 +39,31 @@
                         <div class="card-body m-0 p-0">
                             <div class="table-responsive-sm">
                                 <table class="table table-hover mb-0">
+                                    <input hidden value="${user.id}" name="id"/>
                                     <tbody>
                                     <tr>
                                         <th>Nombre:</th>
-                                        <td>Alberto</td>
+                                        <td>
+                                            <c:out value="${user.names}"/>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>Apellidos:</th>
-                                        <td>Vázquez Díaz</td>
+                                        <td>
+                                            <c:out value="${user.lastnames}"/>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>Sexo:</th>
-                                        <td>Masculino</td>
+                                        <td>
+                                            <c:out value="${user.gender}"/>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>Cumpleaños:</th>
-                                        <td>07/02/2002</td>
+                                        <td>
+                                            <c:out value="${user.birthday}"/>
+                                        </td>
                                     </tr>
                                     </tbody>
                                 </table>

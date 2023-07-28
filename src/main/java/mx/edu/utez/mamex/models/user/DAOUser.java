@@ -70,7 +70,7 @@ public class DAOUser {
             }
         } catch (SQLException e) {
             Logger.getLogger(DAOUser.class.getName())
-                    .log(Level.SEVERE, "ERROR findAll" + e.getMessage());
+                    .log(Level.SEVERE, "ERROR findOne" + e.getMessage());
         } finally {
             close();
         }
@@ -179,6 +179,22 @@ public class DAOUser {
             close();
         }
         return false;
+    }
+
+
+    public String nameUser(Long id){
+        String name = "";
+        try {
+            conn = new MySQLConnection().connect();
+            String query = "select name_user from users where id_user = ?;";
+            pstm = conn.prepareStatement(query);
+            pstm.setLong(1, id);
+            rs = pstm.executeQuery();
+            if(rs.next()) {
+                name = rs.getString("name_user");
+            }
+        }catch (SQLException e){}
+        return name;
     }
 
 
